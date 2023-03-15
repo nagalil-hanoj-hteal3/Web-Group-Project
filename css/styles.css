@@ -1,0 +1,36 @@
+.header h1{
+    text-align: center;
+    color: black;
+}
+
+body{
+    background-color: rgb(232, 228, 223);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande';
+}
+
+.menu a{
+    color: rgb(95, 60, 60);
+    text-decoration: none;
+}
+a:hover{
+    color:red;
+}
+
+a:active{
+    color: blue;
+}
+
+.dropdown{
+    display: inline-block; 
+}
+.dropdown_item{
+    display: none; 
+    min-width: 100%;
+}
+.dropdown_item a{
+    display: block;
+    color: red; 
+}
+.dropdown:hover .dropdown_item {
+    display: block;
+  }
