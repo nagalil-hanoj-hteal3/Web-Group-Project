@@ -31,7 +31,11 @@ a:active{
 }
 .dropdown_item a{
     display: block;
-    color: red; 
+    color: rgb(95, 60, 60); 
+}
+
+.dropdown_item a:hover{
+    color: rgb(208, 174, 174);
 }
 .dropdown:hover .dropdown_item {
     display: block;
