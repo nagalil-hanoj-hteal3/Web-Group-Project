@@ -6,6 +6,7 @@
 body{
     background-color: rgb(232, 228, 223);
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande';
+    line-height: 40px;
 }
 
 .menu a{
@@ -22,6 +23,7 @@ a:active{
 
 .dropdown{
     display: inline-block; 
+    color: rgb(95, 60, 60);
 }
 .dropdown_item{
     display: none; 
