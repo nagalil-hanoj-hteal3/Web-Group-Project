@@ -1,0 +1,148 @@
+h1{
+    text-align: center;
+    /*color: aqua;
+    /*display: block;
+    margin: 0 auto;*/
+}
+table{
+    text-align: center;
+}
+
+a:hover{
+    color:red;
+}
+
+a:active{
+    color: blue;
+}
+
+.showcase.active {
+    right: 300px; 
+}
+
+
+.dropdown{
+    display: inline-block; 
+    color: rgb(95, 60, 60);
+
+}
+.dropdown_item{
+    display: none; 
+    min-width: 100%;
+}
+.dropdown_item a{
+    display: block;
+    color: rgb(95, 60, 60); 
+}
+
+
+.dropdown:hover .dropdown_item {
+    display: block;
+}
+
+.showcase {
+    position: absolute;
+    left: 0; 
+    width: 100%; 
+    min-height: 100vh;
+    padding: 100px;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    background-color: lightgray; 
+    color: whitesmoke;
+    z-index: 1; 
+    transition: 0.5s;
+
+    background-position: center;
+    background-size:cover;
+    position: relative; 
+}
+.showcase.active {
+    left: 150px; 
+}
+
+.showcase header{
+    position: absolute; 
+    left: 1em;
+    top: 1em;
+    align-items: center;
+}
+
+
+
+/* for the menu and close button*/ 
+.toggle{
+    position: relative; 
+    width: 40px;
+    height: 40px;
+    background: url('/html/image/menu1.png') ;
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: 40px;
+
+}
+.toggle.active{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background: url('/html/image/cancel.png');
+    background-repeat: no-repeat;
+    background-size: 40px; 
+    background-position: center;
+}
+
+/* menu section*/
+.menu {
+    position: absolute; 
+    top: 0;
+    left: 0; 
+    width: 60px; 
+    padding: 10px;
+    height: 100%;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+.menu ul {
+    position: relative;
+    list-style: none;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #111;
+}
+
+.menu ul li a:hover {
+    color: rgb(151, 76, 151); 
+
+}
+
+
+/*My info
+#my{
+    color: red;
+}
+
+/*Kyrstn info
+#kyrstn{
+    color: aquamarine;
+}*/
+
+/*Yasameen info
+#yasameen{
+    color: blueviolet;
+}*/
+
+/*EJ info
+#ej{
+    color: aqua;
+}
+/*
+body{
+    background-image: url('https://cdn.discordapp.com/attachments/1087055001307840612/1087487931855413268/pexels-photo-129731.png');
+    background-repeat: no-repeat;
+}*/
