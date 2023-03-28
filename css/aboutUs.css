@@ -4,6 +4,11 @@ h1{
     /*display: block;
     margin: 0 auto;*/
 }
+
+body{
+    line-height: 50px;
+}
+
 table{
     text-align: center;
 }
@@ -108,11 +113,12 @@ a:active{
 .menu ul {
     position: relative;
     list-style: none;
+    font-size: 20px;
 }
 
 .menu ul li a {
     text-decoration: none;
-    font-size: 20px;
+    /*font-size: 20px;*/
     color: #111;
 }
 
