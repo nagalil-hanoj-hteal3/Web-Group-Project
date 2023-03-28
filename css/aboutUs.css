@@ -76,7 +76,7 @@ a:active{
     position: relative; 
     width: 40px;
     height: 40px;
-    background: url('/html/image/menu1.png') ;
+    background: url('/images/menu1.png') ;
     background-repeat: no-repeat;
     background-position: center; 
     background-size: 40px;
@@ -86,7 +86,7 @@ a:active{
     position: relative;
     width: 40px;
     height: 40px;
-    background: url('/html/image/cancel.png');
+    background: url('/images/cancel.png');
     background-repeat: no-repeat;
     background-size: 40px; 
     background-position: center;
