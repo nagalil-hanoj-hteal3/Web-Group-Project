@@ -5,33 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sales</title>
-    <link rel="stylesheet" type="text/css" href = "/css/styles.css">
+    <link rel="stylesheet" type="text/css" href = "/css/aboutUs.css">
 </head>
 <body>
-    <div class="header"><h1>Sales</h1></div>
+    <section class="showcase">
+        <header>
+            <h1>Sales</h1>
+            <!--music bar-->
+        <audio controls > <!--still? lemme check nah lemme see hmm-->
+            <source src="/music/feeling_happy.wav" ></audio>
+            <div class="toggle"></div>
+        </header>
+
+    </section>
 
     <div class="menu">
-        <a href="index.html">Home</a> <br>
-        <a href="about-us.html" >About Us</a> <br>
-        <div class ="dropdown" >
-            <span href="women.html">Women</span>  
-            <div class="dropdown_item">
-                <a href="women_top.html">top</a>
-                <a href="women_bottom.html">bottom</a> 
-            </div> 
-        </div> <br>
+        <ul>
+            <li><a href="index.html"> 
+                <img src="https://cdn.discordapp.com/attachments/1081329569258287296/1086137061750353971/image.png" width="50" height="50">
+            </a></li>
+            <li><div class ="dropdown" >
+                <div href="women.html">Women</div>  
+                <div class="dropdown_item">
+                    <a href="women_top.html">Tops</a>
+                    <a href="women_bottom.html">Bottoms</a> 
+                </div> 
+            </div> </li>
+    
+            <li><div class ="dropdown" >
+                <div href="men.html">Men</div>  
+                <div class="dropdown_item">
+                    <a href="men_top.html">Tops</a>
+                    <a href="men_bottom.html">Bottoms</a> 
+                </div></div></li> 
+            
+            <li><a href="accessories.html" >Accessories</a> </li>
+            <li><a href="sales.html" >Sales</a></li>
+            <li><a href="customerservice.html" >Services</a></li>
+            <li><a href="about-us.html">About Us</a> </li>
+            </ul>
 
-        <div class ="dropdown" >
-            <span href="men.html">Men</span>  
-            <div class="dropdown_item">
-                <a href="men_top.html">top</a>
-                <a href="men_bottom.html">bottom</a> 
-            </div> 
-        </div> <br>
-        <a href="accessories.html" >Accessories</a> <br>
-        <a href="sales.html" >Sales</a> <br>
-        <a href="customerservice.html" >Customer Services</a> <br>
     </div>
+
+
+    <script>
+        const menuToggle= document.querySelector('.toggle')
+        const showcase= document.querySelector('.showcase')
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active')
+            showcase.classList.toggle('active')
+        })
+    </script>
     
     <!--table for calendar-->
 
