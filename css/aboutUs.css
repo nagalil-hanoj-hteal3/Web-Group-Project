@@ -9,9 +9,11 @@ body{
 }
 
 
-.header h1{
-    text-align: center;
-    color: black;
+.logo{ 
+    position: relative;
+    display: flex;
+    /*left: 40%;*/
+    left:50%;
 }
 
 body{
@@ -63,7 +65,7 @@ table{
     text-align: center;
     position: absolute;
     left: 0; 
-    width: 100%; 
+   /* width: 100%; */
     min-height: 100vh;
     padding: 100px;
     display: flex; 
@@ -95,8 +97,6 @@ table{
     top: 1em;
     align-items: center;
 }
-
-
 
 /* for the menu and close button*/ 
 .toggle{

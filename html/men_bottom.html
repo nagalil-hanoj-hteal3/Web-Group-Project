@@ -5,34 +5,80 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Men's Bottom</title>
-    <link rel="stylesheet" type="text/css" href = "/css/men.css">
+    <link rel="stylesheet" type="text/css" href = "/css/aboutUs.css">
 </head>
 <body>
-    <div class="header"><h2>Men's Bottom Section</h2></div>
-    <!-- for men bottom -->
+    <section class="showcase">
+        <header>
+            <h1>Men's Bottoms</h1>
+            <!--music bar-->
+        <audio controls > <!--still? lemme check nah lemme see hmm-->
+            <source src="/music/feeling_happy.wav" ></audio>
+            <div class="toggle"></div>
+    <!--for men top-->    
+        </header>
+        <table>
+            <tr>
+                <td id="sweatpants">
+                    <a href="sweatpants.html">
+                    <img src="https://th.bing.com/th/id/OIP.7_zhHqfLxamspLFgLTAHEgAAAA?w=153&h=350&c=7&r=0&o=5&dpr=1.5&pid=1.7" width="210px" height="250px">
+                    </a>&emsp;&emsp;&emsp;&emsp;
+                </td>
+                <td id="shorts">
+                    <a href="shorts.html">
+                    <img src="https://th.bing.com/th/id/OP.cyvVo6yofyaFaA474C474?w=178&h=231&o=5&dpr=1.5&pid=1.7" width="210px" height="250px">
+                    </a>&emsp;&emsp;&emsp;&emsp;
+                </td>
+                <td id="tights">
+                    <a href="shorts.html">
+                    <img src="https://th.bing.com/th/id/OIP.8hoyveyISa-0j1ptGK0ZMQHaH1?w=198&h=210&c=7&r=0&o=5&dpr=1.5&pid=1.7" width="210px" height="250px">
+                    </a>&emsp;&emsp;&emsp;&emsp;
+                </td>
+            </tr>
+            <tr>
+                <td><label>Sweatpants</label></td>
+                <td><label>Shorts</label></td>
+                <td><label>Tights</label></td>
+            </tr>
+        </table>
+    </section>
 
-    <table>
-        <tr>
-            <td id="sweatpants">
-                <a href="sweatpants.html">
-                <img src="https://th.bing.com/th/id/OIP.7_zhHqfLxamspLFgLTAHEgAAAA?w=153&h=350&c=7&r=0&o=5&dpr=1.5&pid=1.7" width="210px" height="250px">
-                </a>&emsp;&emsp;&emsp;&emsp;
-            </td>
-            <td id="shorts">
-                <a href="shorts.html">
-                <img src="https://th.bing.com/th/id/OP.cyvVo6yofyaFaA474C474?w=178&h=231&o=5&dpr=1.5&pid=1.7" width="210px" height="250px">
-                </a>&emsp;&emsp;&emsp;&emsp;
-            </td>
-            <td id="tights">
-                <a href="shorts.html">
-                <img src="https://th.bing.com/th/id/OIP.8hoyveyISa-0j1ptGK0ZMQHaH1?w=198&h=210&c=7&r=0&o=5&dpr=1.5&pid=1.7" width="210px" height="250px">
-                </a>&emsp;&emsp;&emsp;&emsp;
-            </td>
-        </tr>
-        <tr>
-            <td><label>Sweatpants</label></td>
-            <td><label>Shorts</label></td>
-            <td><label>Tights</label></td>
-        </tr>
-    </table>
+    <div class="menu">
+        <ul>
+            <li><a href="index.html"> 
+                <img src="https://cdn.discordapp.com/attachments/1081329569258287296/1086137061750353971/image.png" width="50" height="50">
+            </a></li>
+            <li><div class ="dropdown" >
+                <div href="women.html">Women</div>  
+                <div class="dropdown_item">
+                    <a href="women_top.html">Tops</a>
+                    <a href="women_bottom.html">Bottoms</a> 
+                </div> 
+            </div> </li>
+    
+            <li><div class ="dropdown" >
+                <div href="men.html">Men</div>  
+                <div class="dropdown_item">
+                    <a href="men_top.html">Tops</a>
+                    <a href="men_bottom.html">Bottoms</a> 
+                </div></div></li> 
+            
+            <li><a href="accessories.html" >Accessories</a> </li>
+            <li><a href="sales.html" >Sales</a></li>
+            <li><a href="customerservice.html" >Services</a></li>
+            <li><a href="about-us.html">About Us</a> </li>
+            </ul>
+
+    </div>
+
+
+    <script>
+        const menuToggle= document.querySelector('.toggle')
+        const showcase= document.querySelector('.showcase')
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active')
+            showcase.classList.toggle('active')
+        })
+    </script>
 </body>
