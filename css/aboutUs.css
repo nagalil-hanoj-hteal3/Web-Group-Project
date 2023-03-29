@@ -45,6 +45,10 @@ a:active{
     display: block;
 }
 
+table{
+    color: black;
+}
+
 .showcase {
     position: absolute;
     left: 0; 
