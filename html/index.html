@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FitRat Website</title>
-    <link rel="stylesheet" type="text/css" href = "/css/aboutUs.css">
+    <link rel="stylesheet" type="text/css" href = "css/styles.css">
     <link rel="icon" href="https://cdn.discordapp.com/attachments/1081329569258287296/1086137061750353971/image.png">
 
-    <link rel="" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <script src="js/menu.js" defer></script>
 </head>
 <!--
     @brief: HomePage for the application
@@ -18,77 +18,27 @@
 -->
 <body>    
 <section class="showcase">
-   <!--<div style="margin: 0 auto"> 
-        <header>
-            <h1>Home</h1>
-            music bar
+   <div style="margin: 0 auto;"> 
+        <footer>
+            <h1>Welcome to FitRat</h1>
         <audio controls > 
-            <source src="/music/feeling_happy.wav" ></audio>
+            <source src="music/feeling_happy.wav" ></audio>
             <div class="toggle"></div>
-        </header>
-  </div> -->
-     <!--Calendar-->
-     <div class="wrapper" >
-        <header>
-            <p class="current-date">April 2023</p>
-            <div class="icons">
-                <span class="material-symbols-rounded">chevron_left</span>
-                <span class="material-symbols-rounded">chevron_right</span>
-            </div>
-        </header>
-        <!--calender-->
-        <div class="calendar">
-            <ul class="weeks">
-                <li>Sun</li>
-                <li>Mon</li>
-                <li>Tue</li>
-                <li>Wed</li>
-                <li>Thu</li>
-                <li>Fri</li>
-                <li>Sat</li>
-            </ul>
-            <ul class="dates">
-                <li>28</li>
-                <li>29</li>
-                <li>30</li>
-                <li>31</li>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-                <li>4</li>
-                <li>5</li>
-                <li>6</li>
-                <li>7</li>
-                <li>8</li>
-                <li>9</li>
-                <li>10</li>
-                <li>11</li>
-                <li>12</li>
-                <li>13</li>
-                <li>14</li>
-                <li>15</li>
-                <li>16</li>
-                <li>17</li>
-                <li>18</li>
-                <li>19</li>
-                <li>20</li>
-                <li>21</li>
-                <li>22</li>
-                <li>23</li>
-                <li>24</li>
-                <li>25</li>
-                <li>26</li>
-                <li>27</li>
-            </ul>
-        </div>
-
-    </div>
+            <table>
+                <th>Featured Items</th>
+                <tr>
+                    <td><img src="file:///C:/Users/elaet/OneDrive/Desktop/Elaeth's%20Files/Images/Men/Men_Longsleeve/Longsleeve%203/Light_Pink.jpg" width=150px height=170px></td>
+                    <td><img src="file:///C:/Users/elaet/OneDrive/Desktop/Elaeth's%20Files/Images/Men/Men_Hoodie/Hoodie%205/Sand.jpg" width=150px height=170px></td>
+                </tr>
+                <tr>
+                    <td>Light Pink Longs (Men)</td>
+                </tr>
+            </table>
+        </footer>
+  </div>
     
+
     </section>
-
-
-  
-
 
     <div class="menu">
         <ul>
@@ -115,19 +65,10 @@
             <li><a href="customerservice.html" >Services</a></li>
             <li><a href="about-us.html">About Us</a> </li><br><br>
             <li><a href="shopping_cart.html"><br><br><br>
-                <img src="/images/shopping_bag.png" width="50" height="50">
+            <img src="/images/shopping_bag.png" width="50" height="50">
             </a></li>
+        </ul>
     </div>
 
-
-    <script>
-        const menuToggle= document.querySelector('.toggle')
-        const showcase= document.querySelector('.showcase')
-
-        menuToggle.addEventListener('click', () => {
-            menuToggle.classList.toggle('active')
-            showcase.classList.toggle('active')
-        })
-    </script>
 </body>
 </html>
