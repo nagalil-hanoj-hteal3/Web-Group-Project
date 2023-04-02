@@ -6,23 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
     <link rel="stylesheet" href ="/css/aboutUs.css">
-
+    <script src="/js/menu.js" defer></script>
     <!-- Browser tab icon -->
     <link rel="icon" href="https://cdn.discordapp.com/attachments/1081329569258287296/1086137061750353971/image.png">
     
 
 </head>
-<body>    
+<body>
+    <!-- 
+    @brief: for displaying each groupmate's info
+    -->
    <section class="showcase">
         <header>
-            <h1 class="logo">About Us</h1>
-            <!--music bar-->
-        <audio controls > <!--still? lemme check nah lemme see hmm-->
-            <source src="/music/feeling_happy.wav" ></audio>
-            <div class="toggle"></div>
+            <h1 class="logo">About Us</h1> 
+            
         </header>
+            <div class="toggle"></div>
+            
+            <div class="music">
+                <audio controls > <!--still? lemme check nah lemme see hmm-->
+                    <source src="/music/feeling_happy.wav" >
+                </audio>
+            </div>
+        <table>
+            <tr>
+                <th>Web</th>
+            </tr>
+        </table>
+            
 
     </section>
+
+    <!-- side menu initializations -->
 
     <div class="menu">
         <ul>
@@ -52,56 +67,10 @@
 
     </div>
     
-
-    <script>
-        const menuToggle= document.querySelector('.toggle')
-        const showcase= document.querySelector('.showcase')
-
-        menuToggle.addEventListener('click', () => {
-            menuToggle.classList.toggle('active')
-            showcase.classList.toggle('active')
-        })
-    </script>
-
 </body>
 </html>
 
-    <!--
    
-    <h2>About My</h2><table>
-     My Info 
-    <tr>
-        <td id="my">[blank]</td>
-    </tr>
-    </table>
-
-    <br>
-    <h2>About Kyrstn</h2>
-    <table>
-     Kyrstn Info 
-    <tr>
-        <td id="kyrstn">[blank]</td>
-    </tr>
-    </table>
-    
-    
-    <div class="about"><h2>About Yasameen</h2>
-    <table>
-    < Yasameen Info --
-    <tr>
-        <td id="yasameen" >[blank]</td>
-    </tr>
-    </table>
-</div>
-    
-
-<div class="about" style="text-align: center">
-    <h2>About EJ</h2>
-    <table>
-     EJ Info
-    </table>
-    </div>
-->
   
 </body>
 </html>

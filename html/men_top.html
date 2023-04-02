@@ -5,65 +5,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Men's Top</title>
-    <link rel="stylesheet" type="text/css" href = "/css/aboutUs.css">
+    <link rel="stylesheet" type="text/css" href = "/css/aboutUs.css" >
+    
+    <script src="/js/menu.js" defer></script>
 </head>
 <body>
     <section class="showcase">
         <header>
-            <h1>Men's Top</h1>
-            <!--music bar-->
-        <audio controls > <!--still? lemme check nah lemme see hmm-->
-            <source src="/music/feeling_happy.wav" ></audio>
-            <div class="toggle"></div>
+            <h1 class="logo">Men Top</h1> 
+            
         </header>
+            <div class="toggle"></div>
+
+                <audio controls > <!--still? lemme check nah lemme see hmm-->
+                    <source src="/music/feeling_happy.wav" >
+                </audio>
         
-    <!--for men top-->
-    <table>
-        <tr>
-            <td>Shirts</td>
-        </tr>
-        <tr>
-            <td>
-                <a href="men_shirt_1.html">
-                <img src="https://cdn.discordapp.com/attachments/1081329569258287296/1090769648364040402/White.jpg" width="210px" height="250px">
-                </a>&emsp;&emsp;&emsp;&emsp;
-            </td>
-            <td>
-                <a href="men_shirt_2.html">
-                <img src="https://cdn.discordapp.com/attachments/1081329569258287296/1090769691124965376/White.jpg" width="210px" height="250px">
-                </a>&emsp;&emsp;&emsp;&emsp;
-            </td>
-            <td>
-                <a href="men_shirt_3.html">
-                <img src="https://cdn.discordapp.com/attachments/1081329569258287296/1090769734913507368/White.jpg" width="210px" height="250px">
-                </a>&emsp;&emsp;&emsp;&emsp;
-            </td>
-            <td>
-                <a href="men_shirt_4.html">
-                <img src="https://cdn.discordapp.com/attachments/1081329569258287296/1090769778748170342/White.jpg" width="210px" height="250px">
-                </a>&emsp;&emsp;&emsp;&emsp;
-            </td>
-            <td>
-                <a href="men_shirt_5.html">
-                <img src="https://cdn.discordapp.com/attachments/1081329569258287296/1090769822587027516/White.png" width="210px" height="250px">
-                </a>&emsp;&emsp;&emsp;&emsp;
-            </td>
-            <td>
-                <a href="men_shirt_6.html">
-                <img src="https://cdn.discordapp.com/attachments/1081329569258287296/1090769861594071120/White.jpg" width="210px" height="250px">
-                </a>&emsp;&emsp;&emsp;&emsp;
-            </td>
-        </tr>
+       
+    <!--for men top
+    PLEASE REMEMBER to put the style into CSS file PLEASEEEEEE!!!!!!-->
+    <div class="items">
+    <table >
         <tr>
             <td><label>FitRat Edition I</label></td>
             <td><label>FitRat Exclusive: WTF</label></td>
             <td><label>FitRat Edition II</label></td>
+        </tr>
+        <tr>
+            <td>
+                <a href="men_shirt_1.html">
+                <img src="https://cdn.discordapp.com/attachments/1081329569258287296/1090769648364040402/White.jpg" width="210px" height="250px"></a>
+            </td>
+            <td>
+                <a href="men_shirt_2.html">
+                <img src="https://cdn.discordapp.com/attachments/1081329569258287296/1090769691124965376/White.jpg" width="210px" height="250px"></a>
+            </td>
+            <td>
+                <a href="men_shirt_3.html">
+                <img src="https://cdn.discordapp.com/attachments/1081329569258287296/1090769734913507368/White.jpg" width="210px" height="250px"></a>
+            </td>
+        </tr>
+        <tr>
             <td><label>FitRat Motto</label></td>
             <td><label>FitRat SE Limited</label></td>
             <td><label>FitRat Blank</label></td>
         </tr>
-     </table>
-        </header>
+        <tr>
+            <td>
+                <a href="men_shirt_4.html">
+                <img src="https://cdn.discordapp.com/attachments/1081329569258287296/1090769778748170342/White.jpg" width="210px" height="250px"></a>
+            </td>
+            <td>
+                <a href="men_shirt_5.html">
+                <img src="https://cdn.discordapp.com/attachments/1081329569258287296/1090769822587027516/White.png" width="210px" height="250px"></a>
+            </td>
+            <td>
+                <a href="men_shirt_6.html">
+                <img src="https://cdn.discordapp.com/attachments/1081329569258287296/1090769861594071120/White.jpg" width="210px" height="250px"></a>
+            </td>
+        </tr>
+    </table>
+    </div>
     </section>
 
     <div class="menu">
@@ -93,16 +95,5 @@
             </ul>
 
     </div>
-
-
-    <script>
-        const menuToggle= document.querySelector('.toggle')
-        const showcase= document.querySelector('.showcase')
-
-        menuToggle.addEventListener('click', () => {
-            menuToggle.classList.toggle('active')
-            showcase.classList.toggle('active')
-        })
-    </script>
 </body>
 </html>

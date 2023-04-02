@@ -1,11 +1,3 @@
-/* API that used for initalizing the chevron_left and chevron_right */
-@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
-*{
-    margin: 0; 
-    padding:0; 
-    box-sizing: border-box;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande';
-}
 h1{
     text-align: center;
 }
@@ -28,9 +20,6 @@ body{
     line-height: 50px;
 }*/
 
-table{
-    text-align: center;
-}
 
 a:hover{
     color:red;
@@ -42,10 +31,10 @@ a:active{
 }
 
 .showcase.active {
-    right: 300px; 
+    left: 300px; 
 }
 
-
+/* dropdown menu*/
 .dropdown{
     display: inline-block; 
     color: rgb(95, 60, 60);
@@ -65,9 +54,6 @@ a:active{
     display: block;
 }
 
-table{
-    color: black;
-}
 
 /*style for the entire showcase */
 .showcase {
@@ -78,8 +64,8 @@ table{
     min-height: 100vh;
     padding: 100px;
     display: flex; 
-    justify-content: center;
-    align-items: center;
+    gap: 3rem;
+ 
     background-color: lightgray; /*gray box to white*/ 
     color: whitesmoke;
     z-index: 1;
@@ -100,96 +86,15 @@ table{
     left: 150px; 
 }
 /* //this section will over write the header of the calendar, 
-however, without this section, the header of the showcase cannot be styled 
-.showcase header{
+however, without this section, the header of the showcase cannot be styled */
+.showcase header{ 
     position: absolute; 
-    left: 1em;
-    top: 1em;
+    left: 40%;
+    top: 1.5em;
     align-items: center;
-}*/
-
-/* style for the calendar  */
-.wrapper{
-    width: 450px;
-    background: white;
-    color: black; 
-    border-radius: 10px;  
-}
-/* content of wrapper intializations */
-.wrapper header{
-    display: flex;
-    align-items:center; 
-    padding: 25px 30px 10px;
-    justify-content: space-between;
 }
 
-/* collects the current date (first line of output) */
-header .current-date{
-    font-size: 1.45rem; 
-    font-weight: 500; 
-}
-
-/* style for the < > icons */
-header .icons span{
-    height: 38px; 
-    width: 38px; 
-    margin: 0 1px; 
-    font-size: 1.9rem;
-    cursor: pointer; 
-    text-align: center;
-    line-height: 38px; 
-    border-radius: 50%; 
-}
-header .icons span:hover{
-    background: #f2f2f2;
-}
-header .icons span:last-child{
-    margin-right: -10px;
-}
-
-/* list of the days in the month */
-.calendar ul{
-    display: flex;
-    list-style: none;
-    flex-wrap: wrap; 
-}
-
-/* style for the weeks*/
-.calendar .weeks li{
-    font-weight: 500; 
-}
-
-/* style for the weeks and dates*/
-.calendar ul li{
-    position: relative;
-    width: calc(100% / 7);
-}
-
-/* style for the date*/
-.calendar .dates li{
-    z-index: 1;
-    cursor: pointer; 
-    margin-top: 30px; 
-}
-/* style for dates before hovering*/ 
-.calendar .dates li::before{
-    position: absolute;
-    content: "";
-    height:40px; 
-    width:40px; 
-    top: 50%; 
-    left: 50%;
-    z-index: -1;
-    border-radius: 50%; 
-    transform: translate(-50%,-50%); 
-}
-
-/* style for dates when hovering*/
-.calendar .dates li:hover::before{
-    background: #f2f2f2;
-}
-
-/* for the menu and close button*/ 
+/* for the menu and close button*/
 .toggle{
     position: relative; 
     width: 40px;
@@ -198,8 +103,7 @@ header .icons span:last-child{
     background-repeat: no-repeat;
     background-position: center; 
     background-size: 40px;
-
-}
+} 
 .toggle.active{
     position: relative;
     width: 40px;
@@ -214,7 +118,7 @@ header .icons span:last-child{
 .menu {
     text-decoration: none;
     line-height: 50px;
-    margin: 15px;
+    margin:35px;
     position: absolute; 
     top: 0;
     left: 0; 
@@ -243,28 +147,12 @@ header .icons span:last-child{
 
 }
 
-
-/*My info
-#my{
-    color: red;
+.items{
+   position: absolute; 
+   margin-top: 80px;
+   left: 20%; 
 }
 
-/*Kyrstn info
-#kyrstn{
-    color: aquamarine;
-}*/
-
-/*Yasameen info
-#yasameen{
-    color: blueviolet;
-}*/
-
-/*EJ info
-#ej{
-    color: aqua;
+.items td{
+    padding: 1.5em;    
 }
-/*
-body{
-    background-image: url('https://cdn.discordapp.com/attachments/1087055001307840612/1087487931855413268/pexels-photo-129731.png');
-    background-repeat: no-repeat;
-}*/
