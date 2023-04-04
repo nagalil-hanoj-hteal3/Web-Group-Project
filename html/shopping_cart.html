@@ -5,23 +5,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shopping Cart</title>
+    <link rel="stylesheet" type="text/css" href = "/css/cart.css"> <!--Maybe change to styles-->
     <link rel="icon" href="https://cdn.discordapp.com/attachments/1081329569258287296/1086137061750353971/image.png">
+
     <script src="/js/menu.js" defer></script>
-    <link rel="stylesheet" href ="/css/aboutUs.css">
-    
 </head>
-<body>
-    <h1>Shopping Cart</h1>
+
+<body>    
+    <section class="showcase">
+        <header>
+            <h1 class="logo">Check Out</h1> 
+            
+        </header>
+            <div class="toggle"></div>
+
+              <form id="email">
+                <label>Email:</label>
+                <input type="email" id="email" name="email">
+                <button type="submit">Confirm</button>
+              </form>
+
+    </section>
+
+    <div class="menu">
+        <ul>
+            <li><a href="/index.html"> 
+                <img src="https://cdn.discordapp.com/attachments/1081329569258287296/1086137061750353971/image.png" width="50" height="50">
+            </a></li>
+            <li><div class ="dropdown" >
+                <div href="women.html">Women</div>  
+                <div class="dropdown_item">
+                    <a href="women_top.html">Tops</a>
+                    <a href="women_bottom.html">Bottoms</a> 
+                </div> 
+            </div> </li>
     
-    <div class="my-bag">
-        <h2>My Bag</h2>
-        <div class="sub-total">Sub-Total</div>
+            <li><div class ="dropdown" >
+                <div href="men.html">Men</div>  
+                <div class="dropdown_item">
+                    <a href="men_top.html">Tops</a>
+                    <a href="men_bottom.html">Bottoms</a> 
+                </div></div></li> 
+            
+            <li><a href="accessories.html" >Accessories</a> </li>
+            <li><a href="sales.html" >Sales</a></li>
+            <li><a href="customerservice.html" >Services</a></li>
+            <li><a href="about-us.html">About Us</a> </li><br><br>
+            <li><a href="shopping_cart.html"><br><br><br>
+            <img src="/images/shopping_bag.png" width="50" height="50">
+            </a></li>
+        </ul>
     </div>
 
-    <div class="total">
-        <h2>Total</h2>
-    </div>
-
-    <button>Confirm</button>
 </body>
 </html>
