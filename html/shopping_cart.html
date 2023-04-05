@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shopping Cart</title>
+    <title>Shopping Page</title>
     <link rel="stylesheet" type="text/css" href = "/css/cart.css"> <!--Maybe change to styles-->
     <link rel="icon" href="https://cdn.discordapp.com/attachments/1081329569258287296/1086137061750353971/image.png">
 
@@ -14,17 +14,20 @@
 <body>    
     <section class="showcase">
         <header>
-            <h1 class="logo">Check Out</h1> 
+            <h1 class="logo">Shopping Cart</h1> 
             
         </header>
             <div class="toggle"></div>
+           
+        <section class="shopping-cart">
+            <h4>Shopping Cart</h4>  
+        </section>
 
-              <form id="email">
-                <label>Email:</label>
-                <input type="email" id="email" name="email">
-                <button type="submit">Confirm</button>
-              </form>
-
+        <section class="personal-info">
+            <h4>Your Information</h4>
+            Name: <input type="text" name="name" size="20" maxlength="20"><br>
+            Email: <input type="text" name="email" size="20" maxlength="50" placeholder="johndoe@gmail.com"><br>
+        </section>
     </section>
 
     <div class="menu">

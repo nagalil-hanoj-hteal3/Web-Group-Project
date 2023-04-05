@@ -1,6 +1,20 @@
-/* Style the form inputs */
+section, h4{
+    color: black;
+}
 
-  #email input {
+.shopping-cart{
+    background-color: white;
+    width: 800px;
+    height: 700px;
+}
+
+.personal-info{
+    background-color: white;
+    width: 600px;
+    height: 200px;
+}
+
+.personal-info input{
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
@@ -8,20 +22,8 @@
     max-width: 400px;
     box-sizing: border-box;
     margin-bottom: 10px;
-  }
-  
-  #email button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  #email button:hover {
-    background-color: #3e8e41;
-  }
+}
+
 
 /*from aboutUs*/
 h1{
@@ -32,7 +34,6 @@ body{
     background-color: whitesmoke;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande';
     line-height: 40px;
-   
 }
 
 .logo{ 
@@ -41,11 +42,11 @@ body{
     /*left: 40%;*/
     left:50%;
 }
-/*
-body{
-    line-height: 50px;
-}*/
 
+/*Tables*/
+table td, th{
+    color: black;
+}
 
 a:hover{
     color:red;
