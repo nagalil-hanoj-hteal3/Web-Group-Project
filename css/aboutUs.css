@@ -160,16 +160,23 @@ however, without this section, the header of the showcase cannot be styled */
 
 .animate{
     position: absolute;
-    margin-top: 2.5em;
+    left: 50%;
+    margin-top: 4.5em;
 }
 
 .team{
     position: absolute; 
     margin-top: 10em;
-    left: 0%; 
+    left: 50%; 
  }
  .team td{
      color: blue;
      line-height: normal;
      font-family: Georgia, 'Times New Roman', Times, serif;
  }
+
+ h2{
+    color: black;
+    font-family:'Times New Roman', Times, serif;
+    font-size: x-large;
+}

@@ -26,7 +26,7 @@ section, h4{
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
-    width: 100%;
+    width: 70%;
     max-width: 400px;
     box-sizing: border-box;
     margin-bottom: 10px;
@@ -37,6 +37,10 @@ section, h4{
     background-color: white;
     border-radius: 5px;
     height: 400px
+}
+
+.payment input{
+    size: 5;
 }
 
 #confirm{
