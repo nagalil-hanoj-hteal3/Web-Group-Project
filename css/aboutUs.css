@@ -9,7 +9,6 @@ body{
    
 }
 
-
 .logo{ 
     position: relative;
     display: flex;
@@ -17,6 +16,7 @@ body{
     left:50%;
 }
 
+/*Tables*/
 table td, th{
     color: black;
 }
