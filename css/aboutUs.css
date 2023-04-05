@@ -16,11 +16,10 @@ body{
     /*left: 40%;*/
     left:50%;
 }
-/*
-body{
-    line-height: 50px;
-}*/
 
+table td, th{
+    color: black;
+}
 
 a:hover{
     color:red;
