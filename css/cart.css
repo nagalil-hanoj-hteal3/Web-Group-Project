@@ -6,12 +6,19 @@ section, h4{
     background-color: white;
     width: 800px;
     height: 700px;
+    border-radius: 5px;
+}
+
+.shopping-cart h4{
+    text-align: left;
+    margin: 20px;
 }
 
 .personal-info{
     background-color: white;
     width: 600px;
     height: 200px;
+    border-radius: 5px;
 }
 
 .personal-info input{
@@ -22,8 +29,16 @@ section, h4{
     max-width: 400px;
     box-sizing: border-box;
     margin-bottom: 10px;
-}
+} 
 
+.payment {
+    background-color: white;
+    border-radius: 5px;
+    height: 100px;
+    width: 100px;
+    margin-top: 250px;
+
+  }  
 
 /*from aboutUs*/
 h1{
