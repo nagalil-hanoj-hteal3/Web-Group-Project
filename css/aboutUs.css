@@ -157,3 +157,19 @@ however, without this section, the header of the showcase cannot be styled */
 .items td{
     padding: 1.5em;    
 }
+
+.animate{
+    position: absolute;
+    margin-top: 2.5em;
+}
+
+.team{
+    position: absolute; 
+    margin-top: 10em;
+    left: 0%; 
+ }
+ .team td{
+     color: blue;
+     line-height: normal;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+ }

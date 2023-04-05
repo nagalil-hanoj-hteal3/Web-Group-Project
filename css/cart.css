@@ -4,9 +4,10 @@ section, h4{
 
 .shopping-cart{
     background-color: white;
-    width: 800px;
+    width: 500px;
     height: 700px;
     border-radius: 5px;
+    margin-left: 20px;
 }
 
 .shopping-cart h4{
@@ -31,6 +32,31 @@ section, h4{
     margin-bottom: 10px;
 } 
 
+.personal-info .payment{
+    margin-top: 70px;
+    background-color: white;
+    border-radius: 5px;
+    height: 400px
+}
+
+#confirm{
+ background-color: #4CAF50; /* Green */
+ border-radius: 3px;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  margin-top: 50px;;
+}
+
+#confirm:hover {
+    background-color: #3e8e41;
+  }
 
 h1{
     text-align: center;
@@ -81,7 +107,6 @@ a:active{
     display: block;
     color: rgb(95, 60, 60); 
 }
-
 
 .dropdown:hover .dropdown_item {
     display: block;
