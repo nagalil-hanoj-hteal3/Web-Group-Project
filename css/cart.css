@@ -4,10 +4,11 @@ section, h4{
 
 .shopping-cart{
     background-color: white;
-    width: 500px;
+    width: 600px;
     height: 700px;
     border-radius: 5px;
-    margin-left: 20px;
+    margin-left: 100px;
+    position: fixed;
 }
 
 .shopping-cart h4{
@@ -20,6 +21,8 @@ section, h4{
     width: 600px;
     height: 200px;
     border-radius: 5px;
+    margin-left: 650px;
+    position: fixed;
 }
 
 .personal-info input{
@@ -182,7 +185,7 @@ however, without this section, the header of the showcase cannot be styled */
     text-decoration: none;
     line-height: 50px;
     margin:35px;
-    position: absolute; 
+    position: fixed; 
     top: 0;
     left: 0; 
     width: 60px; 
