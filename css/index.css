@@ -7,7 +7,7 @@
 }
 
 #shop-button {
-    background-color: rgb(192, 182, 192);
+    background-color: rgb(153, 114, 153);
     color: black;
     padding: 10px 20px;
     border: none;
@@ -18,8 +18,8 @@
 
 
 #shop-button:hover {
-    background-color: rgb(153, 114, 153);
-    color: white;
+    background-color: rgb(183, 148, 183);
+    color: black;
 }
 
 .bottom-cover{
@@ -61,11 +61,11 @@
     height: 300px;
     background-color: rgb(255, 255, 255);
     margin-top: 100px;
+    border-radius: 5px;
 }
 
 .box:hover {
     transform: scale(1.05); /* Scale up by 5% on hover */
-    border: solid black;
 }
 .category p{
     text-decoration: underline;
