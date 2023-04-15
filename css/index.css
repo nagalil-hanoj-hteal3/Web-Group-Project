@@ -1,0 +1,258 @@
+.cover-page{
+    margin-top: 90px;
+    height: 700px;
+    background-color: white;
+    width: 90%;
+    position:absolute;
+}
+
+.bottom-cover{
+    margin-top: 700px;
+    height: 700px;
+    background-color: rgb(246, 215, 220);
+    width: 90%;
+    position:absolute;
+    display: flex;
+}
+
+ #ad-header{
+    text-align: left;
+    margin-left: 300px;
+    position: absolute;
+    width: 300px;
+    margin-top: 300px;
+}
+
+#cover-image img{
+    height: 500px;
+    border: solid black;
+    padding: 20px;
+}
+
+#cover-image{
+    margin-top: 50px;
+    left: 800px;
+    position: absolute;
+}
+
+#ad-header h2{
+    font-size: 40px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande';
+}
+
+.box{
+    margin: 50px;
+    width: 500px;
+    height: 300px;
+    background-color: rgb(255, 255, 255);
+    margin-top: 200px;
+}
+
+.box:hover {
+    transform: scale(1.05); /* Scale up by 5% on hover */
+    border: solid black;
+}
+.category p{
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.category-pic img{
+    height: 200px;
+}
+
+
+/*About Us*/
+p{
+    color: black;
+}
+
+.music {
+    height: 50px;
+    float: left; 
+    position: relative;
+}
+
+h1{
+    text-align: center;
+}
+
+body{
+    background-color: whitesmoke;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande';
+    line-height: 40px;
+   
+}
+
+.logo{ 
+    position: relative;
+    display: flex;
+    /*left: 40%;*/
+    left:50%;
+}
+
+/*Tables*/
+table td, th{
+    color: black;
+}
+
+a:hover{
+    color:red;
+    font-size: 21px;
+}
+
+a:active{
+    color: blue;
+}
+
+.showcase.active {
+    left: 300px; 
+}
+
+/* dropdown menu*/
+.dropdown{
+    display: inline-block; 
+    color: rgb(95, 60, 60);
+
+}
+.dropdown_item{
+    display: none; 
+    min-width: 100%;
+}
+.dropdown_item a{
+    display: block;
+    color: rgb(95, 60, 60); 
+}
+
+
+.dropdown:hover .dropdown_item {
+    display: block;
+}
+
+
+/*style for the entire showcase */
+.showcase {
+    text-align: center;
+    position: absolute;
+    left: 0; 
+    /*width: 100%; */
+    min-height: 100vh;
+    padding: 100px;
+    display: flex; 
+    gap: 3rem;
+    overflow: scroll;
+ 
+    background-color: lightgray; /*gray box to white*/ 
+    color: whitesmoke;
+    z-index: 1;
+    transition: 0.5s;
+    top:0;
+
+    background-position: center;
+    background-size:cover;
+    position: relative; 
+}
+
+.showcase h1{
+    text-align: center;
+    margin: 0 auto;
+    color: black;
+}
+.showcase.active {
+    left: 150px; 
+}
+/* //this section will over write the header of the calendar, 
+however, without this section, the header of the showcase cannot be styled */
+.showcase header{ 
+    position: absolute; 
+    left: 40%;
+    top: 1.5em;
+    align-items: center;
+}
+
+/* for the menu and close button*/
+.toggle{
+    position: relative; 
+    width: 40px;
+    height: 40px;
+    background: url('/images/menu1.png') ;
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: 40px;
+} 
+.toggle.active{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background: url('/images/cancel.png');
+    background-repeat: no-repeat;
+    background-size: 40px; 
+    background-position: center;
+}
+
+/* menu section*/
+.menu {
+    text-decoration: none;
+    line-height: 50px;
+    margin:35px;
+    position: absolute; 
+    top: 0;
+    left: 0; 
+    width: 60px; 
+    padding: 10px;
+    height: 100%;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+.menu ul {
+    position: relative;
+    list-style: none;
+    font-size: 20px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    /*font-size: 20px;*/
+    color: #111;
+}
+
+.menu ul li a:hover {
+    color: rgb(151, 76, 151); 
+
+}
+
+.items{
+   position: absolute; 
+   margin-top: 80px;
+   left: 20%; 
+}
+
+.items td{
+    padding: 1.5em;    
+}
+
+.animate{
+    position: absolute;
+    left: 50%;
+    margin-top: 4.5em;
+}
+
+.team{
+    position: absolute; 
+    margin-top: 10em;
+    left: 50%; 
+ }
+ .team td{
+     color: blue;
+     line-height: normal;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+ }
+
+ h2{
+    color: black;
+    font-family:'Times New Roman', Times, serif;
+    font-size: x-large;
+}
