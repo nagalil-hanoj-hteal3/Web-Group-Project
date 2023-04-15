@@ -75,8 +75,14 @@ body{
 .logo{ 
     position: relative;
     display: flex;
-    /*left: 40%;*/
-    left:50%;
+    text-align: center;
+    margin-left: 100px;
+
+}
+
+.logo h1 {
+    font-size: 45px;
+    font-weight: bold;
 }
 
 /*Tables*/

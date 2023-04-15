@@ -12,8 +12,12 @@ body{
 .logo{ 
     position: relative;
     display: flex;
-    /*left: 40%;*/
-    left:50%;
+    margin-left: 10px;
+}
+
+.logo h1 {
+    font-size: 45px;
+    font-weight: bold;
 }
 
 /*Tables*/
