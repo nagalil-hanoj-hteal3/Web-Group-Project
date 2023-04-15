@@ -6,9 +6,25 @@
     position:absolute;
 }
 
+#shop-button {
+    background-color: rgb(192, 182, 192);
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    height: 50px;
+}
+
+
+#shop-button:hover {
+    background-color: rgb(153, 114, 153);
+    color: white;
+}
+
 .bottom-cover{
     margin-top: 700px;
-    height: 700px;
+    height: 600px;
     background-color: rgb(246, 215, 220);
     width: 90%;
     position:absolute;
@@ -25,7 +41,6 @@
 
 #cover-image img{
     height: 500px;
-    border: solid black;
     padding: 20px;
 }
 
@@ -45,7 +60,7 @@
     width: 500px;
     height: 300px;
     background-color: rgb(255, 255, 255);
-    margin-top: 200px;
+    margin-top: 100px;
 }
 
 .box:hover {
