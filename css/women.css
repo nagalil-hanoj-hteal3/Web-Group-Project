@@ -1,0 +1,167 @@
+h1{
+    text-align: center;
+}
+
+body{
+    background-color: whitesmoke;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande';
+    line-height: 40px;
+   
+}
+
+.logo{ 
+    position: relative;
+    display: flex;
+    /*left: 40%;*/
+    left:50%;
+}
+.showcase.active {
+    left: 300px; 
+}
+
+/* dropdown menu*/
+.dropdown{
+    display: inline-block; 
+    color: rgb(95, 60, 60);
+
+}
+.dropdown_item{
+    display: none; 
+    min-width: 100%;
+}
+.dropdown_item a{
+    display: block;
+    color: rgb(95, 60, 60); 
+}
+.dropdown:hover .dropdown_item {
+    display: block;
+}
+
+
+/*style for the entire showcase */
+.showcase {
+
+    position: absolute;
+    /*left: 0;*/ 
+    /*width: 100%; */
+    min-height: 100vh;
+    /*padding: 100px;*/
+    display: flex; 
+    gap: 3rem;
+    overflow: scroll;
+ 
+    background-color: lightgray; /*gray box to white*/ 
+    color: whitesmoke;
+    z-index: 1;
+    transition: 0.5s;
+    top:0;
+
+    background-position: center;
+    background-size:cover;
+    position: relative; 
+}
+
+.showcase h1{
+    text-align: center;
+    margin: 0 auto;
+    color: black;
+}
+.showcase.active {
+    left: 150px; 
+}
+/* //this section will over write the header of the calendar, 
+however, without this section, the header of the showcase cannot be styled */
+.showcase header{ 
+    position: absolute; 
+    left: 40%;
+    top: 1.5em;
+    align-items: center;
+}
+/*
+.showcase.music{
+   /*position: absolute; 
+    float: right; 
+    margin-top: 0; 
+    top: 0; 
+    right: 0; 
+    display: flex;
+    flex-direction: column;
+}*/
+
+audio{
+    position: absolute;
+    top:5em;
+    left:1em;
+    /*width: ;*/
+    /*height: 200px;*/
+    display: flex;
+    flex-direction: column;}
+
+
+.search{
+    position: absolute;
+    top: 6em; 
+    right: 1em; 
+    margin-right: 50px;
+}
+
+/* for the menu and close button*/
+.toggle{
+    position: absolute; 
+    width: 40px;
+    height: 40px;
+    background: url('/images/menu1.png') ;
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: 40px;
+    margin: left 0; /*the position of the menu button*/
+} 
+.toggle.active{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: url('/images/cancel.png');
+    background-repeat: no-repeat;
+    background-size: 40px; 
+    background-position: center;
+}
+
+/* menu section*/
+.menu {
+    text-decoration: none;
+    line-height: 50px;
+    margin:35px;
+    position: absolute; 
+    top: 0;
+    left: 0; 
+    width: 60px; 
+    padding: 10px;
+    height: 100%;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+.menu ul {
+    position: relative;
+    list-style: none;
+    font-size: 20px;
+}
+.menu ul li a {
+    text-decoration: none;
+    /*font-size: 20px;*/
+    color: #111;
+}
+.menu ul li a:hover {
+    color: rgb(151, 76, 151); 
+
+}
+
+/*style for shirt div*/ 
+.women_top{
+    position: absolute; 
+    margin-top:80px; 
+    left: 10%; 
+}
+.women_top td{
+    padding: 1.5em;
+}
