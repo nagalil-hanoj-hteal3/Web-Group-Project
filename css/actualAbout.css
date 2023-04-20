@@ -35,11 +35,6 @@ h2, p{
     margin-top: 0;
 }
 
-.member-name {
-    font-size: 20px;
-    font-weight: bold;
-    color: black;
-}
 
 .team {
     display: flex;
@@ -51,17 +46,26 @@ h2, p{
     margin-left: 20px;
   }
 
- .animate {
-    margin-top: 550px;;
-    height: 100px;
-    clear: right; 
+.animate {
+    clear: left;
+    background-color: white;
+    height: fit-content;
+    border: 5px solid black;
+    border-radius: 5%;
+    position: sticky;
+
+    display: flex;
+    justify-content: center;
     text-align: center;
+    margin: 0 auto;
+    width: 100%;
 }
 
 .music {
     height: 50px;
     float: left; 
     position: relative;
+    display: block;
 }
 
 /*from aboutUs.css*/
@@ -73,20 +77,19 @@ body{
     background-color: whitesmoke;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande';
     line-height: 40px;
-   
 }
 
 .logo{ 
     position: relative;
     display: flex;
     text-align: center;
-    margin-left: 100px;
-
 }
 
 .logo h1 {
-    font-size: 45px;
+    font-size: 50px;
     font-weight: bold;
+    font-style: italic;
+    font-family:'Gill Sans';
 }
 
 /*Tables*/
