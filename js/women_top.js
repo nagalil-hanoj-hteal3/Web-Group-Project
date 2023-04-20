@@ -169,9 +169,3 @@ function mouseOut_tanktop(event){
 function mouseOver_tanktop(event){
     event.target.src=women_tanktop_items.find(obj=>obj.id==event.target.dataset.itemid).img_hover
 }
-
-
-
-
-
-
