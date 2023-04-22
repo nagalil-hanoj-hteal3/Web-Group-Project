@@ -49,23 +49,27 @@ h2, p{
 .animate {
     clear: left;
     background-color: white;
-    height: fit-content;
+    /*height: fit-content;*/
     border: 5px solid black;
     border-radius: 5%;
-    position: sticky;
+    font-size: smaller;
+    position: absolute;
+    max-width: 71em;
+    max-height: 35em;
+
+    overflow: scroll; 
 
     display: flex;
-    justify-content: center;
     text-align: center;
-    margin: 0 auto;
-    width: 100%;
+    margin-left: 1em; 
+    top: 12em; 
 }
 
 .music {
-    height: 50px;
     float: left; 
-    position: relative;
-    display: block;
+    position: absolute;
+    display: flex;
+    right: 1em; 
 }
 
 /*from aboutUs.css*/
@@ -83,13 +87,6 @@ body{
     position: relative;
     display: flex;
     text-align: center;
-}
-
-.logo h1 {
-    font-size: 50px;
-    font-weight: bold;
-    font-style: italic;
-    font-family:'Gill Sans';
 }
 
 /*Tables*/
@@ -226,7 +223,7 @@ however, without this section, the header of the showcase cannot be styled */
 
 .items{
    position: absolute; 
-   margin-top: 80px;
+   margin-bottom: 0;
    left: 20%; 
 }
 

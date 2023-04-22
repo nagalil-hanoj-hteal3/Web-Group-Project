@@ -3,11 +3,12 @@ section, h4{
 }
 
 .shopping-cart{
+    position:absolute; 
     background-color: white;
-    min-width: 500px;
-    height: 700px;
+    min-width: 15em;
+    height: 17em;
     border-radius: 5px;
-    margin-left: 20px;
+    margin-left: 5em;
 }
 
 .shopping-cart h4{
@@ -15,10 +16,14 @@ section, h4{
     margin: 20px;
 }
 
+form{
+    position:absolute; 
+    right:0; 
+}
 .personal-info{
     background-color: white;
-    width: 600px;
-    height: 200px;
+    width: 25em;
+    height: 12em;
     border-radius: 5px;
 }
 
@@ -27,7 +32,7 @@ section, h4{
     border: 1px solid #ddd;
     border-radius: 5px;
     width: 70%;
-    max-width: 400px;
+    max-width: 40%;
     box-sizing: border-box;
     margin-bottom: 10px;
 } 

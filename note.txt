@@ -1,0 +1,4 @@
+In order to get your php to run, active the web by running this link: 
+    http://localhost:8888/yourfolder1/yourfolder2/yourfilename.php 
+then run html file 
+ 
