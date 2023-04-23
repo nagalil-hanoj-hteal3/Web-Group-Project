@@ -230,3 +230,7 @@ however, without this section, the header of the showcase cannot be styled */
 .items td{
     padding: 1.5em;    
 }
+
+::-webkit-scrollbar{
+    display: none;
+}
