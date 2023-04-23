@@ -189,3 +189,12 @@ audio{
     column-span: 3;
     background-color: rgb(238, 171, 190);
 }
+
+
+/*testing shopping cart with localstorage
+#cart_items{
+    position:absolute; 
+    top: 35em;
+    left:5em; 
+    color: black;  
+}*/

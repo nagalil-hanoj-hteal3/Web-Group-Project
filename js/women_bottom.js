@@ -56,29 +56,35 @@ function mouseOver_sweatpant(event){
 }
 
 //empty array to contain items from women section 
-let items_array=[]; 
+
 let counter = 0;
   
 
 const cart_buttons=document.querySelectorAll("button"); 
 
 for(let i=0; i<cart_buttons.length; i++){
-    console.log("here// testing")
+    console.log("women sweatpant testing")
     cart_buttons[i].addEventListener("click", function(event){
-        //console.log(women_sweatpant_items[i].id); 
-        //alert("Item has been added to cart!!"); 
-        //items_array.push(women_sweatpant_items[i]);
-        //console.log(items_array);
+        let temp_arr=JSON.parse(localStorage.getItem('shopping_cart_items'))
+        if (!temp_arr){
+            temp_arr=[]
+        }
+        temp_arr.push(women_sweatpant_items[i])
+        localStorage.setItem('shopping_cart_items',JSON.stringify(temp_arr))
+        const cart_items= JSON.parse(localStorage.getItem('shopping_cart_items')); 
 
         //convert dataset into JSON string
-        const women_sweatpant_items_String=JSON.stringify(women_sweatpant_items[i]);
-        localStorage.setItem("shopping_cart_items",women_sweatpant_items_String );
-        const stored_dataset= localStorage.getItem("shopping_cart_items");
-        const read_dataset= JSON.parse(stored_dataset); 
-        console.log(read_dataset); 
+        // const women_sweatpant_items_String=JSON.stringify(women_sweatpant_items[i]);
+        // localStorage.setItem("shopping_cart_items",women_sweatpant_items_String );
+        // const stored_dataset= localStorage.getItem("shopping_cart_items");
+        // const read_dataset= JSON.parse(stored_dataset); 
+        console.log(cart_items[i].img); 
+
+        //testing to output the items in cart after clicking add to cart 
+        //document.getElementById("cart_items").innerHTML+=`<img src="${cart_items[i].img}" width="150px" height="210px"></img>`;
+
         event.preventDefault(); 
     })
-    
 }
 
 

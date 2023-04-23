@@ -169,3 +169,37 @@ function mouseOut_tanktop(event){
 function mouseOver_tanktop(event){
     event.target.src=women_tanktop_items.find(obj=>obj.id==event.target.dataset.itemid).img_hover
 }
+
+
+
+//localstorage for women_tops
+const buttons= document.querySelectorAll("button"); 
+for(let i=0; i<buttons.length; i++){
+    console.log("women tops testing"); 
+    buttons[i].addEventListener('click', function(event){
+        let temp_arr=JSON.parse(localStorage.getItem('shopping_cart_items'));
+        if(!temp_arr){
+            temp_arr=[]
+        }
+        console.log("HERE"+i); 
+        if(i>=0 && i<5){
+            console.log("shirt");
+            temp_arr.push(women_shirt_items[i]); 
+            localStorage.setItem('shopping_cart_items',JSON.stringify(temp_arr));
+        }
+        else if(i>=5 && i<8){
+            console.log("hoodie")
+            temp_arr.push(women_hoodie_items[i]); 
+            localStorage.setItem('shopping_cart_items',JSON.stringify(temp_arr));
+        }
+        else{
+            console.log("tanktop")
+            temp_arr.push(women_tanktop_items[i]); 
+            localStorage.setItem('shopping_cart_items',JSON.stringify(temp_arr))
+        }
+        const cart_items=JSON.parse(localStorage.getItem('shopping_cart_items')); 
+        console.log(cart_items[i].img);
+         
+        event.preventDefault(); 
+    })
+}

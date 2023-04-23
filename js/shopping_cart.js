@@ -1,17 +1,12 @@
-var idString= localStorage.getItem("shopping_cart_item"); 
-var id= JSON.parse(idString); 
-var item_id= id.id; 
+window.onload= function(){
+    let items_in_cart= JSON.parse(localStorage.getItem('shopping_cart_items'))
+    console.log('shopping cart testing');
 
-
-//document.getElementById("item_in_cart").innerHTML=`<img src="${item_img}">`
-
-//document.getElementById("shopping-cart").innerHTML=``
-
-
-
-/*const women_sweatpant_items_String=JSON.stringify(women_sweatpant_items[i]);
-localStorage.setItem("shopping_cart_items",women_sweatpant_items_String );
-const stored_dataset= localStorage.getItem("shopping_cart_items");
-const read_dataset= JSON.parse(stored_dataset); 
-console.log(read_dataset); 
-event.preventDefault(); */
+    if(!items_in_cart){}
+    else{
+    for(let i=0; i<items_in_cart.length;i++){
+        console.log(items_in_cart[i].img); 
+        document.getElementById('item_in_cart').innerHTML+=`<img src="${items_in_cart[i].img}" width="150px" height="210px"></img>`
+        }
+    }
+}
