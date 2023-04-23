@@ -116,3 +116,6 @@ footer .icons span:last-child{
     background: greenyellow;
 }
 
+::-webkit-scrollbar{
+    display: none;
+}
