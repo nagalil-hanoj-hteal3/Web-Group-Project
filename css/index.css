@@ -276,3 +276,7 @@ however, without this section, the header of the showcase cannot be styled */
     font-family:'Times New Roman', Times, serif;
     font-size: x-large;
 }
+
+::-webkit-scrollbar{
+    display: none;
+}
