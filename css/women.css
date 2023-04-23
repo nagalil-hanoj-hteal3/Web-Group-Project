@@ -198,3 +198,7 @@ audio{
     left:5em; 
     color: black;  
 }*/
+
+::-webkit-scrollbar{
+    display: none;
+}
