@@ -18,3 +18,7 @@ summary{
 .questions label{
     color: black;
 }
+
+::-webkit-scrollbar{
+    display: none;
+}
