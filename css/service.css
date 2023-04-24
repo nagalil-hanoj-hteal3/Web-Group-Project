@@ -1,24 +1,34 @@
-.questions{
+.faq{
     right: 2em;
     top: 5em;
+    margin-left: 0%;
+    width: 500px;
+    margin-top: 10%;
+}
+
+.question{
+    margin-left: 0%;
+    border: solid black 1.5px;
+    margin: 20px;
+    padding: 30px;
+    width: 1000px;
+    text-align: left;
+    background-color: rgb(230, 229, 229)
+}
+
+summary, label, p{
+    color: black;
 }
 
 summary{
-    color: black;
+    font-weight: bolder;
 }
 
-.questions li{
-    color: black;
-}
-
-.questions p{
-    color: black;
-}
-
-.questions label{
+.question li, ul{
     color: black;
 }
 
 ::-webkit-scrollbar{
     display: none;
 }
+
