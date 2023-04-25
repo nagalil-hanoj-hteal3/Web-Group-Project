@@ -36,9 +36,6 @@ let women_sweatpant_items= [
 
 ]
 
-//convert dataset into JSON string
-const women_sweatpant_items_String=JSON.stringify(women_sweatpant_items);
-
 let women_sweatpant_item_container= document.querySelector('.women_sweatpant_items')
   
     for (let item of women_sweatpant_items){
