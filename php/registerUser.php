@@ -6,15 +6,6 @@
 </head>
 <body>
     <?php
-    /*check the user input first
-    if (empty($_GET['email'])||empty($_GET['email_confirm'])||empty($_GET['password'])||empty($_GET['password_confirm']))
-        exit ("<p> You must enter values in all fields ! Click your browser's Back button to return to the previous page.</p>");
-    else if ($_GET["email"]!=$_GET["email_confirm"])
-        exit ("<p> You did not enter the same email address! Click your browser's Back button to return to the previous page.</p>");
-    else if ($_GET["password"]!=$_GET["password_confirm"])
-        exit ("<p> You did not enter the same password! Click your browser's Back button to return to the previous page.</p>");
-*/
-
     // checking if all fields are filled out
     if (empty($_GET['fname'])||empty($_GET['lname'])||empty($_GET['email'])||empty($_GET['password'])||empty($_GET['username']))
         exit ("<p> You must enter values in all fields ! Click your browser's Back button to return to the previous page.</p>");
