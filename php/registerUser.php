@@ -16,19 +16,20 @@
 */
 
     // checking if all fields are filled out
-    if (empty($_GET['firstName'])||empty($_GET['lastName'])||empty($_GET['email'])||empty($_GET['password']||empty($_GET['userName'])))
+    if (empty($_GET['fname'])||empty($_GET['lname'])||empty($_GET['email'])||empty($_GET['password'])||empty($_GET['username']))
         exit ("<p> You must enter values in all fields ! Click your browser's Back button to return to the previous page.</p>");
     
     //connecting to the database with PDO
     require_once("config.php");
 
+    // getting values from user 
     $TableName = "users";
 
-    $fname=$_GET['firstName'];
-    $lname = $_GET['lastName'];
+    $fname=$_GET['fname'];
+    $lname = $_GET['lname'];
     $email=$_GET['email'];
     $password = $_GET['password'];
-    $user = $_GET['userName'];
+    $user = $_GET['username'];
     
 
     // check if already registered with the email
@@ -45,7 +46,7 @@
      $result = $pdo->query($sql);
      while ($row = $result->fetch()) {
          //the username match the field from the table
-         if ($row['userName']==$userName)
+         if ($row['userName']==$user)
          exit("<p>The username you entered is already taken! Click your browser's Back button to return to the previous page.</p>");
      }
     

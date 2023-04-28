@@ -19,7 +19,7 @@ $TableName = "users";
 
 
 $sql = "SELECT * FROM $TableName 
-        WHERE username = '$Username' 
+        WHERE userName = '$Username' 
         AND password = '$Password'";
 $result = $pdo->query($sql);
 
@@ -36,9 +36,6 @@ else {
 ?>
 
 <h2> Login Successful!</h2>
-
-<!--send the flyerID to FrequentFlyerClub.php-->
-<p><a href="FrequentFlyerClub.php?flyerID=<?=$userID?>"> Frequent Flyer Club Home Page</a></p>
 
 </body>
 </html>
