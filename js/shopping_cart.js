@@ -6,7 +6,14 @@ window.onload= function(){
     else{
     for(let i=0; i<items_in_cart.length;i++){
         console.log(items_in_cart[i].img); 
-        document.getElementById('item_in_cart').innerHTML+=`<img src="${items_in_cart[i].img}" width="150px" height="210px"></img><br>`
+        document.getElementById('item_in_cart').innerHTML+=
+        `<div id="items_in_cart_2">
+        <img src="${items_in_cart[i].img}" width="40px" height="70px" ></img>
+        <label id="name">${items_in_cart[i].name}</label>
+        <br>
+        <label id="price">$${items_in_cart[i].price}</label>
+        <button>Remove</button></br>
+        </div></br></br>`
         }
     }
 }

@@ -5,8 +5,8 @@ section, h4{
 .shopping-cart{
     position:absolute; 
     background-color: white;
-    min-width: 15em;
-    height: 17em;
+    min-width:21em;
+    height:70%;
     border-radius: 5px;
     margin-left: 5em;
 }
@@ -170,18 +170,20 @@ however, without this section, the header of the showcase cannot be styled */
 
 /* for the menu and close button*/
 .toggle{
-    position: relative; 
+    position: absolute; 
     width: 40px;
     height: 40px;
     background: url('/images/menu1.png') ;
     background-repeat: no-repeat;
     background-position: center; 
     background-size: 40px;
+    margin-left: 1em; 
+    top: 2em; 
 } 
 .toggle.active{
-    position: relative;
-    width: 40px;
-    height: 40px;
+    position: absolute;
+    width: 37px;
+    height: 37px;
     background: url('/images/cancel.png');
     background-repeat: no-repeat;
     background-size: 40px; 
@@ -233,4 +235,26 @@ however, without this section, the header of the showcase cannot be styled */
 
 ::-webkit-scrollbar{
     display: none;
+}
+
+
+/*item under shopping cart*/
+#items_in_cart_2{
+    position: absolute;
+    background-color: lightpink; /* testing color*/
+    height:80px; 
+    width: 300px; 
+    margin-left: 5%;
+    margin-right: 5%;  
+}
+#items_in_cart_2 img{
+    position: absolute;
+    left: 1em; 
+    margin-top: 2%;
+    margin-bottom: 2%;
+} 
+
+#items_in_cart_2 label {
+    position: absolute; 
+    left: 5em; 
 }
