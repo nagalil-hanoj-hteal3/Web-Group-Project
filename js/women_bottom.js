@@ -115,6 +115,7 @@ for(let i=0; i<cart_buttons.length; i++){
         if (!temp_arr){
             temp_arr=[]
         }
+        
         temp_arr.push(women_sweatpant_items[i])
         localStorage.setItem('shopping_cart_items',JSON.stringify(temp_arr))
         const cart_items= JSON.parse(localStorage.getItem('shopping_cart_items')); 

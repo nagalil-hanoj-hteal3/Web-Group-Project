@@ -6,8 +6,8 @@ body{
     background-color: whitesmoke;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande';
     line-height: 40px;
+   
 }
-
 
 .logo{ 
     position: relative;
@@ -15,14 +15,10 @@ body{
     /*left: 40%;*/
     left:50%;
 }
-/*
-body{
-    line-height: 50px;
-}*/
 
-table{
-    text-align: center;
-    margin-left: auto;
+/*Tables*/
+table td, th{
+    color: black;
 }
 
 a:hover{
@@ -35,10 +31,10 @@ a:active{
 }
 
 .showcase.active {
-    right: 300px; 
+    left: 300px; 
 }
 
-
+/* dropdown menu*/
 .dropdown{
     display: inline-block; 
     color: rgb(95, 60, 60);
@@ -58,9 +54,6 @@ a:active{
     display: block;
 }
 
-table{
-    color: black;
-}
 
 /*style for the entire showcase */
 .showcase {
@@ -71,8 +64,9 @@ table{
     min-height: 100vh;
     padding: 100px;
     display: flex; 
-    justify-content: center;
-    align-items: center;
+    gap: 3rem;
+    overflow: scroll;
+ 
     background-color: lightgray; /*gray box to white*/ 
     color: whitesmoke;
     z-index: 1;
@@ -93,17 +87,25 @@ table{
     left: 150px; 
 }
 /* //this section will over write the header of the calendar, 
-however, without this section, the header of the showcase cannot be styled 
-*/.showcase footer{
+however, without this section, the header of the showcase cannot be styled */
+.showcase header{ 
     position: absolute; 
-    left: 1em;
-    top: 1em;
+    left: 40%;
+    top: 1.5em;
     align-items: center;
-}/**/
+}
 
-/*----------------------------------------------------------------*/
+audio{
+    position: absolute;
+    top:5em;
+    right:1em;
+    /*width: ;*/
+    /*height: 200px;*/
+    display: flex;
+    flex-direction: column;
+}
 
-/* for the menu and close button*/ 
+/* for the menu and close button*/
 .toggle{
     position: relative; 
     width: 40px;
@@ -112,12 +114,11 @@ however, without this section, the header of the showcase cannot be styled
     background-repeat: no-repeat;
     background-position: center; 
     background-size: 40px;
-
-}
+} 
 .toggle.active{
     position: relative;
-    width: 40px;
-    height: 40px;
+    width: 37px;
+    height: 37px;
     background: url('/images/cancel.png');
     background-repeat: no-repeat;
     background-size: 40px; 
@@ -128,7 +129,7 @@ however, without this section, the header of the showcase cannot be styled
 .menu {
     text-decoration: none;
     line-height: 50px;
-    margin: 10px;
+    margin:35px;
     position: absolute; 
     top: 0;
     left: 0; 
@@ -155,4 +156,41 @@ however, without this section, the header of the showcase cannot be styled
 .menu ul li a:hover {
     color: rgb(151, 76, 151); 
 
+}
+
+.items{
+   position: absolute; 
+   margin-top: 80px;
+   left: 20%; 
+}
+
+.items td{
+    padding: 1.5em;    
+}
+
+.animate{
+    position: absolute;
+    left: 50%;
+    margin-top: 4.5em;
+}
+
+.team{
+    position: absolute; 
+    margin-top: 10em;
+    left: 50%; 
+ }
+ .team td{
+     color: blue;
+     line-height: normal;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+ }
+
+ h2{
+    color: black;
+    font-family:'Times New Roman', Times, serif;
+    font-size: x-large;
+}
+
+::-webkit-scrollbar{
+    display: none;
 }

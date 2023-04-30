@@ -1,3 +1,78 @@
+.fitrat-info {
+    position: absolute; 
+    margin-top: 70px;
+    align-items: center;
+    background-color: white;
+    margin-right: 40px;
+    margin-left: 40px;
+}
+
+.fitrat-info p {
+   padding: 20px;
+}
+
+h2, p{
+    color: black;
+}
+
+.pic img{
+   height: 200px;
+   width: 150px;
+   margin: 40px;
+}
+
+.pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.team-member {
+    text-align: center;
+    margin: 30px;
+    background-color: white;
+    margin-top: 0;
+}
+
+
+.team {
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center; 
+    height: 90vh; 
+    position: absolute; 
+    top: 60%;
+    margin-left: 20px;
+  }
+
+.animate {
+    clear: left;
+    background-color: white;
+    /*height: fit-content;*/
+    border: 5px solid black;
+    border-radius: 5%;
+    font-size: smaller;
+    position: absolute;
+    max-width: 71em;
+    max-height: 35em;
+
+    overflow: scroll; 
+
+    display: flex;
+    text-align: center;
+    margin-left: 1em; 
+    top: 12em; 
+}
+
+.music {
+    float: left; 
+    position: absolute;
+    display: flex;
+    right: 1em; 
+}
+
+/*from aboutUs.css*/
 h1{
     text-align: center;
 }
@@ -6,14 +81,12 @@ body{
     background-color: whitesmoke;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande';
     line-height: 40px;
-   
 }
 
 .logo{ 
     position: relative;
     display: flex;
-    /*left: 40%;*/
-    left:50%;
+    text-align: center;
 }
 
 /*Tables*/
@@ -95,16 +168,6 @@ however, without this section, the header of the showcase cannot be styled */
     align-items: center;
 }
 
-audio{
-    position: absolute;
-    top:5em;
-    right:1em;
-    /*width: ;*/
-    /*height: 200px;*/
-    display: flex;
-    flex-direction: column;
-}
-
 /* for the menu and close button*/
 .toggle{
     position: relative; 
@@ -117,8 +180,8 @@ audio{
 } 
 .toggle.active{
     position: relative;
-    width: 37px;
-    height: 37px;
+    width: 40px;
+    height: 40px;
     background: url('/images/cancel.png');
     background-repeat: no-repeat;
     background-size: 40px; 
@@ -160,7 +223,7 @@ audio{
 
 .items{
    position: absolute; 
-   margin-top: 80px;
+   margin-bottom: 0;
    left: 20%; 
 }
 
@@ -168,17 +231,7 @@ audio{
     padding: 1.5em;    
 }
 
-.animate{
-    position: absolute;
-    left: 50%;
-    margin-top: 4.5em;
-}
 
-.team{
-    position: absolute; 
-    margin-top: 10em;
-    left: 50%; 
- }
  .team td{
      color: blue;
      line-height: normal;

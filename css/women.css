@@ -1,4 +1,4 @@
- 
+  
 h1{
     text-align: center;
 }
@@ -17,7 +17,7 @@ body{
     left:50%;
 }
 .showcase.active {
-    left: 300px; 
+    left: 150px; 
 }
 
 /* dropdown menu*/
@@ -117,7 +117,7 @@ audio{
     background-repeat: no-repeat;
     background-position: center; 
     background-size: 40px;
-    margin-left: 2em; /*the position of the menu button*/
+    margin-left: 1em; /*the position of the menu button*/
     top: 2em; 
 } 
 .toggle.active{
@@ -134,7 +134,7 @@ audio{
 .menu {
     text-decoration: none;
     line-height: 50px;
-    margin:35px;
+    margin:20px;
     position: absolute; 
     top: 0;
     left: 0; 
@@ -228,6 +228,20 @@ audio{
 }
 
 .men_bottom td{
+    padding:1.5em;
+    column-span: 3;
+    background-color: rgb(238, 171, 190);
+}
+
+/* css for accesories */
+.accessories{
+    position: absolute; 
+    margin-top:150px; 
+    left: 10%; 
+
+    color: black;
+}
+.accessories td{
     padding:1.5em;
     column-span: 3;
     background-color: rgb(238, 171, 190);
