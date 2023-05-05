@@ -28,9 +28,11 @@
             <div class="toggle"></div>
             
             <div class="music">
-                <audio controls > <!--still? lemme check nah lemme see hmm-->
-                    <source src="/music/feeling_happy.wav" >
+                <a hidden>
+                <audio controls loop autoplay> 
+                    <source src="/music/feeling_happy.wav" type="audio/wav" >
                 </audio>
+                </a>
             </div>
 
             <div class="cover-page">
@@ -42,35 +44,44 @@
                     <img src="/images/Men/Tops/Men_Hoodie/Hoodie 5/Grey.jpg">
                 </div>
             </div>
-
+        <!-- <table> -->
             <div class="bottom-cover">
-                <a href="/html/women_top.html" class="box">
-                    <div class="category">
-                        <p>Women</p>
-                    </div>
-                    <div class="category-pic">
-                        <img src="/images/Women/Tops/Women_Shirt/Shirt 5/Heather_Purple.jpg">
-                    </div>
-                </a>
+            <table>
+                <tr>
+                    <td>
+                        <a href="/html/women_top.html" class="box">
+                            <div class="category">
+                                <p>Women</p>
+                            </div>
+                            <div class="category-pic">
+                                <img src="/images/Women/Tops/Women_Shirt/Shirt 5/Heather_Purple.jpg">
+                            </div>
+                        </a></td>
+                    <td>
+                        <a href="/html/men_top.html" class="box">
+                        <div class="category">
+                            <p>Men</p>
+                        </div>
+                        <div class="category-pic">
+                            <img src="/images/Men/Tops/Men_Longsleeve/Longsleeve 3/Light_Blue.jpg">
+                        </div>
+                    </a>
+                    </td>
             
-                <a href="/html/men_top.html" class="box">
-                    <div class="category">
-                        <p>Men</p>
-                    </div>
-                    <div class="category-pic">
-                        <img src="/images/Men/Tops/Men_Longsleeve/Longsleeve 3/Light_Blue.jpg">
-                    </div>
-                </a>
-            
-                <a href="/html/accessories.html" class="box">
-                    <div class="category">
-                        <p>Accessories</p>
-                    </div>
-                    <div class="category-pic">
-                        <img src="/images/Accessories/Hat/Hat 1/Navy+Gold.jpg">
-                    </div>
-                </a>
+                    <td>
+                        <a href="/html/accessories.html" class="box">
+                            <div class="category">
+                                <p>Accessories</p>
+                            </div>
+                            <div class="category-pic">
+                                <img src="/images/Accessories/Hat/Hat 1/Navy+Gold.jpg">
+                            </div>
+                        </a>
+                    </td>
+                </tr>
+            </table>
             </div>
+        <!-- </table> -->
     </section>
 
     <div class="menu">

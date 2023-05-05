@@ -10,11 +10,11 @@ window.onload= function(){
         //console.log(items_in_cart[i].img); 
         document.getElementById('item_in_cart').innerHTML+=
         `<div id="items_in_cart_2">
-        <img src="${items_in_cart[i].img}" width="40px" height="70px" ></img>
+        <img src="${items_in_cart[i].img}" width="60px" height="70px" ></img>
         <label id="name">${items_in_cart[i].name}</label>
         <br>
         <label id="price">$${items_in_cart[i].price}</label>
-        <button>Remove</button></br>
+        <button id="remove">Remove</button></br>
         </div></br></br>`
 
         //calculate total 
@@ -25,28 +25,33 @@ window.onload= function(){
 
     //remove item that user want to remove 
     const item_arr= JSON.parse(localStorage.getItem('shopping_cart_items')); //read the localstore and set to array 
-    const removeBtn= document.querySelectorAll("button"); 
+    const removeBtn= document.querySelectorAll("#remove"); 
     for(let i=0; i< removeBtn.length; i++){
         console.log("testing remove button"); 
         removeBtn[i].addEventListener("click", function(event){
-            //item_arr.map(obj => item_arr.id);
-            
+            //console.log(i); 
             //loop thru the aray to match the id of the item user want to remove 
-            let item_id= item_arr[i].id;
-            console.log("ID of item: "+item_id);  
+            // let item_id= item_arr[i].id;
+            // console.log("ID of item: "+item_id);  
             //console.log(item_arr); //array of the items in shoppig cart 
-
             item_arr.splice(i, 1);  
-            //console.log(item_arr); //array of the items in shoppig cart 
             localStorage.setItem('shopping_cart_items',JSON.stringify(item_arr)); 
-
+            
             //live load the page 
             location.reload(); 
             total = total - item_arr[i]; 
             console.log("the total after remove= "+total); 
         })
     }
-
     document.getElementById('subtotal').innerHTML= `$`+total; 
 
+    const payBtn= document.getElementById('confirm'); 
+    payBtn.addEventListener("click", function(){
+        location.reload();
+        console.log("before payment"); 
+        item_arr.splice(0); 
+        localStorage.setItem('shopping_cart_items',JSON.stringify(item_arr));
+        console.log("PAID");
+    })
+    
 }

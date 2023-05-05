@@ -30,3 +30,25 @@ for (let item of men_sweatpant_items){
     <button>Add To Cart</button>
     </td>`
 }
+
+const cart_buttons=document.querySelectorAll("button"); 
+
+for(let i=0; i<cart_buttons.length; i++){
+    console.log("men sweatpant testing")
+    cart_buttons[i].addEventListener("click", function(event){
+        let temp_arr=JSON.parse(localStorage.getItem('shopping_cart_items'))
+        if (!temp_arr){
+            temp_arr=[]
+        }
+        
+        temp_arr.push(men_sweatpant_items[i])
+        localStorage.setItem('shopping_cart_items',JSON.stringify(temp_arr))
+        const cart_items= JSON.parse(localStorage.getItem('shopping_cart_items')); 
+        console.log(cart_items[i].img); 
+        event.preventDefault(); 
+    })
+}
+
+
+
+

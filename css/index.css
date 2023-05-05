@@ -1,5 +1,5 @@
 .cover-page{
-    margin-top: 90px;
+    margin-top: 2%;
     height: 700px;
     background-color: white;
     width: 90%;
@@ -29,28 +29,31 @@
     width: 90%;
     position:absolute;
     display: flex;
+    justify-content: center;
 }
 
  #ad-header{
     text-align: left;
-    margin-left: 300px;
+    margin-left: 10%;
     position: absolute;
-    width: 300px;
-    margin-top: 300px;
+    width: 20%;
+    margin-top: 10%;
 }
 
 #cover-image img{
-    height: 500px;
-    padding: 20px;
+    height: 25em;
+    padding: 0%;
 }
 
 #cover-image{
-    margin-top: 50px;
-    left: 800px;
-    position: absolute;
+    margin-top: 25%;
+    left: 15%;
+    position: relative;
+    display: fixed; 
 }
 
 #ad-header h2{
+    color: #111;
     font-size: 40px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande';
 }
@@ -113,8 +116,15 @@ body{
 }
 
 /*Tables*/
-table td, th{
+.bottom-cover table{
+    margin-left: 5%;
+    margin-right: 5%;  
+    
+}
+.bottom-cover table td, th{
     color: black;
+    padding: 1em;
+    
 }
 
 a:hover{
@@ -143,6 +153,8 @@ a:active{
 .dropdown_item a{
     display: block;
     color: rgb(95, 60, 60); 
+    margin-left: 15px; 
+    font-size: larger; 
 }
 
 
@@ -191,20 +203,22 @@ however, without this section, the header of the showcase cannot be styled */
     align-items: center;
 }
 
-/* for the menu and close button*/
 .toggle{
-    position: relative; 
+    position: absolute; 
     width: 40px;
     height: 40px;
     background: url('/images/menu1.png') ;
     background-repeat: no-repeat;
     background-position: center; 
     background-size: 40px;
+    margin-left: -4em; /*the position of the menu button */
+    
+    top: 2em; 
 } 
 .toggle.active{
-    position: relative;
-    width: 40px;
-    height: 40px;
+    position: absolute;
+    width: 37px;
+    height: 37px;
     background: url('/images/cancel.png');
     background-repeat: no-repeat;
     background-size: 40px; 
@@ -215,7 +229,7 @@ however, without this section, the header of the showcase cannot be styled */
 .menu {
     text-decoration: none;
     line-height: 50px;
-    margin:35px;
+    margin:20px;
     position: absolute; 
     top: 0;
     left: 0; 
@@ -244,38 +258,6 @@ however, without this section, the header of the showcase cannot be styled */
 
 }
 
-.items{
-   position: absolute; 
-   margin-top: 80px;
-   left: 20%; 
-}
-
-.items td{
-    padding: 1.5em;    
-}
-
-.animate{
-    position: absolute;
-    left: 50%;
-    margin-top: 4.5em;
-}
-
-.team{
-    position: absolute; 
-    margin-top: 10em;
-    left: 50%; 
- }
- .team td{
-     color: blue;
-     line-height: normal;
-     font-family: Georgia, 'Times New Roman', Times, serif;
- }
-
- h2{
-    color: black;
-    font-family:'Times New Roman', Times, serif;
-    font-size: x-large;
-}
 
 ::-webkit-scrollbar{
     display: none;

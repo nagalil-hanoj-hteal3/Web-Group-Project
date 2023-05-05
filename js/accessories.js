@@ -150,21 +150,22 @@ for(let i=0; i<buttons.length; i++){
             localStorage.setItem('shopping_cart_items', JSON.stringify(temp_arr)); 
         }
         else if(i === 2|| i===3|| i===4){
-            temp_arr.push(beanie[i]);
+            temp_arr.push(beanie[i-2]);
             localStorage.setItem('shopping_cart_items', JSON.stringify(temp_arr)); 
         }
         else if(i===5){
-            temp_arr.push(hat[i]);
+            temp_arr.push(hat[i-5]);
             localStorage.setItem('shopping_cart_items', JSON.stringify(temp_arr));
         }
         else if(i=== 11 || i===12){
-            temp_arr.push(stickers[i]);
+            temp_arr.push(stickers[i-11]);
             localStorage.setItem('shopping_cart_items', JSON.stringify(temp_arr));
         }
         else{
-            temp_arr.push(mug[i]);
+            temp_arr.push(mug[i-6]);
             localStorage.setItem('shopping_cart_items', JSON.stringify(temp_arr));
         }
+        console.log(temp_arr)
         event.preventDefault();
     })
 

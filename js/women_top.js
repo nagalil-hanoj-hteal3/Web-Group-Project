@@ -93,7 +93,7 @@ let women_hoodie_items=[
         price:35, 
         img:'/images/Women/Tops/Women_Hoodie/Hoodie 3/Grey.jpg', 
         img_hover:'/images/Women/Tops/Women_Hoodie/Hoodie 3/Black.jpg'
-    },   
+    }   
 ]
 
 let women_hoodie_item_container=document.querySelector('.women_hoodie_items')
@@ -150,7 +150,7 @@ let women_tanktop_items=[
         price:20, 
         img:'/images/Women/Tops/Women_Tanktop/Tanktop 5/Heather_Grey.jpg', 
         img_hover:'/images/Women/Tops/Women_Tanktop/Tanktop 5/Heather_Red.jpg'
-    },
+    }
 ]
 
 let women_tanktop_item_container=document.querySelector('.women_tanktop_items')
@@ -187,18 +187,18 @@ for(let i=0; i<buttons.length; i++){
             temp_arr.push(women_shirt_items[i]); 
             localStorage.setItem('shopping_cart_items',JSON.stringify(temp_arr));
         }
-        else if(i>=5 && i<8){
-            console.log("hoodie")
-            temp_arr.push(women_hoodie_items[i]); 
+        else if(i>4 && i<8){
+            console.log("hoodie");
+            temp_arr.push(women_hoodie_items[i-5]); //i is index for button not index of the object 
             localStorage.setItem('shopping_cart_items',JSON.stringify(temp_arr));
         }
         else{
             console.log("tanktop")
-            temp_arr.push(women_tanktop_items[i]); 
+            temp_arr.push(women_tanktop_items[i-8]); 
             localStorage.setItem('shopping_cart_items',JSON.stringify(temp_arr))
         }
-        const cart_items=JSON.parse(localStorage.getItem('shopping_cart_items')); 
-        //console.log(cart_items[i].img);
+        //const cart_items=JSON.parse(localStorage.getItem('shopping_cart_items')); 
+        console.log(temp_arr);
          
         event.preventDefault(); 
     })

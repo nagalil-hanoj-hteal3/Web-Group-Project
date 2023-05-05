@@ -194,3 +194,37 @@ for (let item of men_tanktop_items){
 }
 
 //local storage
+const cart_buttons= document.querySelectorAll("button"); 
+
+for(let i=0; i< cart_buttons.length; i++){
+    console.log("men testing"); 
+    cart_buttons[i].addEventListener("click", function (event){
+        console.log(i); 
+        let temp_arr= JSON.parse(localStorage.getItem('shopping_cart_items')); 
+        if(!temp_arr){
+            temp_arr=[]; 
+        }
+        if(i>= 0 && i<=5 ){
+            console.log("shirt");
+            temp_arr.push(men_shirt_items[i]); 
+            localStorage.setItem('shopping_cart_items',JSON.stringify(temp_arr));
+        }
+        else if(i>=6 && i<=8){
+            console.log("sweat");
+            temp_arr.push(men_longsleeve_items[i-6]); 
+            localStorage.setItem('shopping_cart_items',JSON.stringify(temp_arr));
+        }
+        else if(i>=9 && i<= 13){
+            console.log("hoodie");
+            temp_arr.push(men_hoodie_items[i-9]); 
+            localStorage.setItem('shopping_cart_items',JSON.stringify(temp_arr));
+        }
+        else{
+            console.log("tanktops");
+            temp_arr.push(men_tanktop_items[i-14]); 
+            localStorage.setItem('shopping_cart_items',JSON.stringify(temp_arr));
+        }
+        event.preventDefault(); 
+
+    })
+}

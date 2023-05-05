@@ -6,15 +6,11 @@ prevMonth = document.querySelectorAll(".icons span");
 let date = new Date(),
 current_year = date.getFullYear(),
 current_month = date.getMonth();
-//current_day = date.getDay() + 26;
+// current_day = date.getDay() + 26;
 
 //this outputs the current time in the console via inspect
 console.log(date);
 
-//, "Current Year: "+current_year, "Current Month: "+current_month);
-/*console.log("MM/DD/YYYY");
-console.log(current_month + "/" + current_day + "/" + current_year);
-*/
 //to display the month
 const month=["January", "February", "March", "April", "May", "June,",
             "July", "August", "September", "October", "November", "December"];
@@ -40,8 +36,8 @@ const renderCalendar = () => {
         let today = i === date.getDate() && current_month === new Date().getMonth()
                     && current_year === new Date().getFullYear() ? "active" : "";
         //listTag += `<li class="${today}">${i}</li>`;
-        listTag += "<li class=" + today + ">" + i + "</li>";
-        //console.log(i); <-- test output to see on console
+        listTag += "<li class= " + today + ">" + i + "</li>";
+
     }
 
     //output the days that are after the current month to fill in the spaces
@@ -50,7 +46,7 @@ const renderCalendar = () => {
     }
 
     current_date.innerText = `${month[current_month]} ${current_year}`;
-    day.innerHTML = listTag;
+    day.innerHTML = listTag; 
 }
 renderCalendar();
 
@@ -73,3 +69,13 @@ prevMonth.forEach(chevron => {
         renderCalendar();
     })
 });
+
+//function for popup window 
+    const dates= document.getElementsByClassName('dates_not_today'); 
+    //console.log(dates);
+    for (let i=0; i<dates.length; i++){
+        document.addEventListener('click', function(){
+        console.log(i);  
+    })
+}
+
