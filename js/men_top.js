@@ -196,6 +196,10 @@ for (let item of men_tanktop_items){
 //local storage
 const cart_buttons= document.querySelectorAll("button"); 
 
+//cartcount
+var cartCount=JSON.parse(localStorage.getItem('cart_count')); 
+
+
 for(let i=0; i< cart_buttons.length; i++){
     console.log("men testing"); 
     cart_buttons[i].addEventListener("click", function (event){
@@ -224,6 +228,14 @@ for(let i=0; i< cart_buttons.length; i++){
             temp_arr.push(men_tanktop_items[i-14]); 
             localStorage.setItem('shopping_cart_items',JSON.stringify(temp_arr));
         }
+
+        if(cartCount === NaN){
+            cartCount=0; 
+        }
+        //increment cartCount
+        cartCount++ ; 
+        localStorage.setItem('cart_count', cartCount);
+        document.querySelector('.cart_count').innerHTML=cartCount; 
         event.preventDefault(); 
 
     })

@@ -170,6 +170,8 @@ function mouseOver_tanktop(event){
     event.target.src=women_tanktop_items.find(obj=>obj.id==event.target.dataset.itemid).img_hover
 }
 
+//cartcount
+var cartCount=JSON.parse(localStorage.getItem('cart_count')); 
 
 
 //localstorage for women_tops
@@ -199,6 +201,15 @@ for(let i=0; i<buttons.length; i++){
         }
         //const cart_items=JSON.parse(localStorage.getItem('shopping_cart_items')); 
         console.log(temp_arr);
+        
+        if(cartCount === NaN){
+            cartCount=0; 
+        }
+        //increment cartCount
+        cartCount++ ; 
+        localStorage.setItem('cart_count', cartCount);
+        document.querySelector('.cart_count').innerHTML=cartCount; 
+
          
         event.preventDefault(); 
     })

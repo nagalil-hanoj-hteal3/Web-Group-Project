@@ -248,3 +248,26 @@ audio{
     column-span: 3;
     background-color: rgb(238, 171, 190);
 }
+
+.shopping_cart_pic{
+    position: relative;
+    /* width: 15px; */
+    /* margin: ;  */
+}
+.shopping_cart_pic .cart_count{
+    position: absolute;
+    top: -50px; 
+    left:37px; 
+    /*background-color: red;*/
+    border-width: 10px;
+    height: 10px;
+    color: red; 
+    width: 5px;
+}
+
+.shape{
+    
+}
+/* .cart_count{
+    top: 10px; 
+} */

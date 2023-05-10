@@ -172,16 +172,18 @@ however, without this section, the header of the showcase cannot be styled */
 
 /* for the menu and close button*/
 .toggle{
-    position: relative; 
+    position: absolute; 
     width: 40px;
     height: 40px;
     background: url('/images/menu1.png') ;
     background-repeat: no-repeat;
     background-position: center; 
     background-size: 40px;
+    margin-left: -4em; 
+    margin-top: -4.6em; 
 } 
 .toggle.active{
-    position: relative;
+    position: absolute;
     width: 40px;
     height: 40px;
     background: url('/images/cancel.png');
@@ -194,7 +196,7 @@ however, without this section, the header of the showcase cannot be styled */
 .menu {
     text-decoration: none;
     line-height: 50px;
-    margin:35px;
+    margin:20px;
     position: absolute; 
     top: 0;
     left: 0; 
@@ -249,3 +251,4 @@ however, without this section, the header of the showcase cannot be styled */
 ::-webkit-scrollbar{
     display: none;
 }
+

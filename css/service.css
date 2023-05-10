@@ -1,19 +1,26 @@
 .faq{
-    right: 2em;
-    top: 5em;
-    margin-left: 0%;
-    width: 500px;
+    position: absolute; 
+    margin-left:10%;  
+    /* padding-right: -1%; */
+    width: 80%;
     margin-top: 10%;
+
 }
 
 .question{
-    margin-left: 0%;
+   
+    /*margin-left: 10%;*/
     border: solid black 1.5px;
     margin: 20px;
+    /*margin-right: auto;
+    margin-left: auto;*/
     padding: 30px;
-    width: 1000px;
-    text-align: left;
-    background-color: rgb(230, 229, 229)
+    /* position: absolute; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    width: 90%;
+    /*text-align: center;*/
+    background-color: rgb(11, 220, 174)
 }
 
 summary, label, p{
@@ -47,7 +54,7 @@ body{
     position: relative;
     display: flex;
     /*left: 40%;*/
-    left:50%;
+    /* left:50%; */
 }
 .showcase.active {
     left: 150px; 

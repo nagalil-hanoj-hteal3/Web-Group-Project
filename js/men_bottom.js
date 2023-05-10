@@ -31,6 +31,10 @@ for (let item of men_sweatpant_items){
     </td>`
 }
 
+//cartcount
+var cartCount=JSON.parse(localStorage.getItem('cart_count')); 
+
+
 const cart_buttons=document.querySelectorAll("button"); 
 
 for(let i=0; i<cart_buttons.length; i++){
@@ -45,6 +49,15 @@ for(let i=0; i<cart_buttons.length; i++){
         localStorage.setItem('shopping_cart_items',JSON.stringify(temp_arr))
         const cart_items= JSON.parse(localStorage.getItem('shopping_cart_items')); 
         console.log(cart_items[i].img); 
+
+        if(cartCount === NaN){
+            cartCount=0; 
+        }
+        //increment cartCount
+        cartCount++ ; 
+        localStorage.setItem('cart_count', cartCount);
+        document.querySelector('.cart_count').innerHTML=cartCount;
+
         event.preventDefault(); 
     })
 }

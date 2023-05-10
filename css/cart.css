@@ -216,6 +216,17 @@ section, h4{
     position: absolute; 
     left: 5em; 
 }
+#remove{
+    background-color: rgb(153, 114, 153);
+    color: black;
+    padding: 5px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    height: 30px;
+    margin: 0% 0% 0% 40%;
+    font-family: 'Times New Roman', Times, serif;
+}
 
 /*form{
     position:absolute; 
@@ -270,5 +281,29 @@ section, h4{
     background-color: #3e8e41;
 }
 
-
+.shopping-cart{
+    position:absolute; 
+    background-color: white;
+    min-width:21em;
+    height:71%;
+    border-radius: 5px;
+    margin-left: 5%;
+    top: 7.6em; 
+    overflow: scroll;
+}
+.shopping_cart_pic{
+    position: relative;
+    /* width: 15px; */
+    /* margin: ;  */
+}
+.shopping_cart_pic .cart_count{
+    position: absolute;
+    top: -50px; 
+    left:37px; 
+    /*background-color: red;*/
+    border-width: 10px;
+    height: 10px;
+    color: red; 
+    width: 5px;
+}
 

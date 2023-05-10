@@ -137,6 +137,10 @@ for (let item of stickers){
 
 //function to add to cart
 const buttons=document.querySelectorAll("button"); 
+
+//cartcount
+var cartCount=JSON.parse(localStorage.getItem('cart_count')); 
+
 for(let i=0; i<buttons.length; i++){
     console.log("accessories buttons testing"); 
     buttons[i].addEventListener('click', function(event){
@@ -166,6 +170,16 @@ for(let i=0; i<buttons.length; i++){
             localStorage.setItem('shopping_cart_items', JSON.stringify(temp_arr));
         }
         console.log(temp_arr)
+
+        if(cartCount === NaN){
+            cartCount=0; 
+        }
+        //increment cartCount
+        cartCount++ ; 
+        localStorage.setItem('cart_count', cartCount);
+        document.querySelector('.cart_count').innerHTML=cartCount;
+
+
         event.preventDefault();
     })
 
