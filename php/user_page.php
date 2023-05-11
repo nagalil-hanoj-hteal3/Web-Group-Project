@@ -11,6 +11,7 @@
 
 </head>
 <body>
+
     <section class="showcase">
             <div class="toggle"></div>
             
@@ -28,8 +29,10 @@
                     $Username = $_COOKIE['Username'];
                 } 
             ?>
+
              <p>Welcome <strong><?=$Username?></strong>!</p>
-            <button>Log Out</button>
+             <button onclick="location.href='/php/logout.php'">Log Out</button>
+
     </section>
 
     <div class="menu">
