@@ -7,7 +7,6 @@
     <title>User</title>
 
     <link rel="stylesheet" href ="/css/user_page.css">
-    <link rel="stylesheet" href ="/css/aboutUs.css">
     <link rel="icon" href="https://cdn.discordapp.com/attachments/1081329569258287296/1086137061750353971/image.png">
 
 </head>
@@ -17,16 +16,17 @@
             
             <div class="music">
                 <a hidden>
-                <audio controls loop autoplay> 
+                <audio controls loop autsoplay> 
                     <source src="/music/feeling_happy.wav" type="audio/wav" >
                 </audio>
                 </a>
             </div>
 
             <?php
+                // Check if the user is logged in
                 if(isset($_COOKIE['Username'])) {
                     $Username = $_COOKIE['Username'];
-                }
+                } 
             ?>
              <p>Welcome <strong><?=$Username?></strong>!</p>
             <button>Log Out</button>

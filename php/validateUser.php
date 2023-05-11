@@ -30,16 +30,16 @@
     </div>
     
 <?php
-
-session_start();
-
+                
 if (empty($_GET['username'])||empty($_GET['password']))
     exit ('<div class="error-message"><p>You must enter values in all fields! Click your browser\'s Back button to return to the previous page.</p></div>');
+
+session_start(); 
 
 $Username=$_GET['username'];
 $Password = $_GET['password'];
 
-setcookie("Username",$Username);
+setcookie($Username);
 
 //connecting to the database with PDO
 require_once("config.php");
@@ -61,6 +61,7 @@ if(!$row = $result->fetch())
 else {
     $userID = $row['id'];
         // Redirect to index.html on successful login
+        $_SESSION['loggedin'] = true;
         header('Location: /php/user_page.php');
 }
 
