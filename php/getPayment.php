@@ -28,22 +28,8 @@ $TableName = "payment";
 //insert payment data to the table
 //$sql = "INSERT INTO $TableName VALUES (NULL, '$Email','$Password',NULL,NULL,NULL,NULL,NULL,NULL,NULL)";
 
-$sql = "INSERT INTO $TableName (full_name, email, card_holder, card_number, expiration, cvv ) VALUES ('$Name','$Email', '$Card_Name', '$Card_Number' , '$Date', '$CVV')";
+$sql = "INSERT INTO $TableName (full_name, email, card_holder, card_number, expiration, cvv) VALUES ('$Name','$Email', '$Card_Name', '$Card_Number' , '$Date', '$CVV')";
 
-if ($pdo->exec($sql)) {
-  //retrieve the name
-  $sql = "SELECT * FROM $TableName WHERE full_name = '$Name'";
-  $result= $pdo->query($sql);
-  if($row = $result->fetch())
-      $user = $row['full_name'];
-  // closes connection and frees the resources used by the PDO object
-  $pdo = null;
-  ?>
-  <p>Your order has been processed, <strong><?=$Name?></strong>!</p>
-  <?php
-} else {
-  echo "Error processing your order.";
-}
 /*
 $pdo->exec($sql);
 
@@ -52,10 +38,9 @@ $sql = "SELECT * FROM $TableName WHERE userName = '$Name'";
 $result= $pdo->query($sql);
 if($row = $result->fetch())
   $user = $row['full_name'];
-
+*/
 // closes connection and frees the resources used by the PDO object
 $pdo = null;
-*/
 ?>
 
 

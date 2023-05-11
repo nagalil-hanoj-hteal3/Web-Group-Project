@@ -30,11 +30,16 @@
     </div>
     
 <?php
+
+session_start();
+
 if (empty($_GET['username'])||empty($_GET['password']))
     exit ('<div class="error-message"><p>You must enter values in all fields! Click your browser\'s Back button to return to the previous page.</p></div>');
 
 $Username=$_GET['username'];
 $Password = $_GET['password'];
+
+setcookie("Username",$Username);
 
 //connecting to the database with PDO
 require_once("config.php");
@@ -51,19 +56,17 @@ $result = $pdo->query($sql);
 
 
 if(!$row = $result->fetch())
-   exit ('<div class="error-message"><p>You must enter a valid username or password.</p></div>');
+    echo "<script>alert('Invalid username or password. Please try again.');</script>";
 
 else {
     $userID = $row['id'];
         // Redirect to index.html on successful login
-        header('Location: /html/index.html');
+        header('Location: /php/user_page.php');
 }
 
  // closes connection and frees the resources used by the PDO object
  $pdo = null;
 ?>
-
-<h2> Login Successful!</h2>
 
 </body>
 </html>
