@@ -41,6 +41,8 @@ $result= $pdo->query($sql);
 if($row = $result->fetch())
   $user = $row['full_name'];
 
+header('Location: /php/paymentDone.php');
+
 // closes connection and frees the resources used by the PDO object
 $pdo = null;
 ?>

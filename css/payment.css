@@ -1,98 +1,84 @@
-.cover-page{
-    margin-top: 2%;
-    height: 700px;
-    background-color: white;
-    width: 90%;
-    position:absolute;
-}
-
-#shop-button {
-    background-color: rgb(153, 114, 153);
-    color: black;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    border-radius: 10px;
+button{
     height: 50px;
+    width: 100px;
+    margin-top: 5%;
 }
 
+.fitrat-info {
+    position: absolute; 
+    margin-top: 70px;
+    align-items: center;
+    background-color: white;
+    margin-right: 40px;
+    margin-left: 40px;
+}
 
-#shop-button:hover {
-    background-color: rgb(183, 148, 183);
+.fitrat-info p {
+   padding: 20px;
+}
+
+h2, p{
     color: black;
 }
 
-.bottom-cover{
-    margin-top: 700px;
-    height: 600px;
-    background-color: rgb(246, 215, 220);
-    width: 90%;
-    position:absolute;
+.pic img{
+   height: 200px;
+   width: 150px;
+   margin: 40px;
+}
+
+.pic {
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
- #ad-header{
-    text-align: left;
-    margin-left: 10%;
+.team-member {
+    text-align: center;
+    margin: 30px;
+    background-color: white;
+    margin-top: 0;
+}
+
+
+.team {
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center; 
+    height: 90vh; 
+    position: absolute; 
+    top: 60%;
+    margin-left: 20px;
+  }
+
+.animate {
+    clear: left;
+    background-color: white;
+    /*height: fit-content;*/
+    border: 5px solid black;
+    border-radius: 5%;
+    font-size: smaller;
     position: absolute;
-    width: 20%;
-    margin-top: 10%;
-}
+    max-width: 71em;
+    max-height: 25%;
 
-#cover-image img{
-    height: 25em;
-    padding: 0%;
-}
+    overflow: scroll; 
 
-#cover-image{
-    margin-top: 10%;
-    left: 15%;
-    position: relative;
-    display: fixed; 
-}
-
-#ad-header h2{
-    color: #111;
-    font-size: 40px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande';
-}
-
-.box{
-    margin: 50px;
-    width: 500px;
-    height: 300px;
-    background-color: rgb(255, 255, 255);
-    margin-top: 100px;
-    border-radius: 5px;
-}
-
-.box:hover {
-    transform: scale(1.05); /* Scale up by 5% on hover */
-}
-.category p{
-    text-decoration: underline;
-    font-weight: bold;
-    font-size: 25px;
-}
-
-.category-pic img{
-    height: 200px;
-
-}
-
-
-/*About Us*/
-p{
-    color: black;
+    display: flex;
+    text-align: center;
+    margin-left: 1em; 
+    top: 12em; 
 }
 
 .music {
-    height: 50px;
     float: left; 
-    position: relative;
+    position: absolute;
+    display: flex;
+    right: 1em; 
 }
 
+/*from aboutUs.css*/
 h1{
     text-align: center;
 }
@@ -107,25 +93,11 @@ body{
     position: relative;
     display: flex;
     text-align: center;
-    margin-left: 100px;
-
-}
-
-.logo h1 {
-    font-size: 45px;
-    font-weight: bold;
 }
 
 /*Tables*/
-.bottom-cover table{
-    margin-left: 5%;
-    margin-right: 5%;  
-    
-}
-.bottom-cover table td, th{
+table td, th{
     color: black;
-    padding: 1em;
-    
 }
 
 a:hover{
@@ -204,6 +176,7 @@ however, without this section, the header of the showcase cannot be styled */
     align-items: center;
 }
 
+/* for the menu and close button*/
 .toggle{
     position: absolute; 
     width: 40px;
@@ -212,14 +185,13 @@ however, without this section, the header of the showcase cannot be styled */
     background-repeat: no-repeat;
     background-position: center; 
     background-size: 40px;
-    margin-left: -4em; /*the position of the menu button */
-    
-    top: 2em; 
+    margin-left: -4em; 
+    margin-top: -4.6em; 
 } 
 .toggle.active{
     position: absolute;
-    width: 37px;
-    height: 37px;
+    width: 40px;
+    height: 40px;
     background: url('/images/cancel.png');
     background-repeat: no-repeat;
     background-size: 40px; 
@@ -259,7 +231,30 @@ however, without this section, the header of the showcase cannot be styled */
 
 }
 
+.items{
+   position: absolute; 
+   margin-bottom: 0;
+   left: 20%; 
+}
+
+.items td{
+    padding: 1.5em;    
+}
+
+
+ .team td{
+     color: blue;
+     line-height: normal;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+ }
+
+ h2{
+    color: black;
+    font-family:'Times New Roman', Times, serif;
+    font-size: x-large;
+}
 
 ::-webkit-scrollbar{
     display: none;
 }
+
