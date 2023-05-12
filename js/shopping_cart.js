@@ -41,6 +41,12 @@ window.onload= function(){
             location.reload(); 
             total = total - item_arr[i]; 
             console.log("the total after remove= "+total); 
+
+            //decrease cartCount
+            var cart_count2= JSON.parse(localStorage.getItem('cart_count'));
+            cart_count2= cart_count2-1; 
+            localStorage.setItem('cart_count',JSON.stringify(cart_count2));
+
         })
     }
     document.getElementById('subtotal').innerHTML= `$`+total; 
