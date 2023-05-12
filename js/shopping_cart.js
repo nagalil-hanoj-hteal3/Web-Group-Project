@@ -45,12 +45,18 @@ window.onload= function(){
     }
     document.getElementById('subtotal').innerHTML= `$`+total; 
 
+   var cart_count1= JSON.parse(localStorage.getItem('cart_count')); 
+
     const payBtn= document.getElementById('confirm'); 
     payBtn.addEventListener("click", function(){
         location.reload();
         console.log("before payment"); 
         item_arr.splice(0); 
         localStorage.setItem('shopping_cart_items',JSON.stringify(item_arr));
+        
+        cart_count1=0; 
+        localStorage.setItem('cart_count',JSON.stringify(cart_count1));  
+
         console.log("PAID");
     })
     
