@@ -10,7 +10,9 @@
 
 <?php
 if (empty($_GET['full_name'])||empty($_GET['email'])||empty($_GET['cname'])||empty($_GET['cnumber'])||empty($_GET['date'])||empty($_GET['cvv']))
-    exit ('<div class="error-message"><p>You must enter values in all fields! Click your browser\'s Back button to return to the previous page.</p></div>');
+{
+  echo "<script>alert('Please fill out whole form!!');</script>";
+}
 
 //connecting to the database with PDO
 require_once("config.php");
@@ -30,15 +32,15 @@ $TableName = "payment";
 
 $sql = "INSERT INTO $TableName (full_name, email, card_holder, card_number, expiration, cvv) VALUES ('$Name','$Email', '$Card_Name', '$Card_Number' , '$Date', '$CVV')";
 
-/*
+
 $pdo->exec($sql);
 
 //retrieve the name
-$sql = "SELECT * FROM $TableName WHERE userName = '$Name'";
+$sql = "SELECT * FROM $TableName WHERE full_name = '$Name'";
 $result= $pdo->query($sql);
 if($row = $result->fetch())
   $user = $row['full_name'];
-*/
+
 // closes connection and frees the resources used by the PDO object
 $pdo = null;
 ?>
