@@ -1,8 +1,15 @@
-  
-h1{
+.logo{ 
+    position: relative;
+    display: flex;
     text-align: center;
+    margin-left: 0px;
+
 }
 
+.logo h1 {
+    font-size: 45px;
+    font-weight: bold;
+}
 body{
     background-color: whitesmoke;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande';

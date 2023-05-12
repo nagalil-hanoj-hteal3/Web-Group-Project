@@ -1,3 +1,16 @@
+.logo{ 
+    position: relative;
+    display: flex;
+    text-align: center;
+    margin-left: 20px;
+
+}
+
+.logo h1 {
+    font-size: 45px;
+    font-weight: bold;
+}
+
 .fitrat-info {
     position: absolute; 
     margin-top: 70px;

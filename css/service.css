@@ -1,3 +1,16 @@
+.logo{ 
+    position: relative;
+    display: flex;
+    text-align: center;
+    margin-left: 0px;
+
+}
+
+.logo h1 {
+    font-size: 45px;
+    font-weight: bold;
+}
+
 .faq{
     position: absolute; 
     margin-left:10%;  
@@ -20,7 +33,7 @@
     /* justify-content: center; */
     width: 90%;
     /*text-align: center;*/
-    background-color: rgb(174, 121, 239)
+    background-color: rgb(208, 191, 206)
 }
 
 summary, label, p{
