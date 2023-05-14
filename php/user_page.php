@@ -24,10 +24,13 @@
             </div>
 
             <?php
+            /*
                 // Check if the user is logged in
-                if(isset($_COOKIE['Username'])) {
+                if(isset($_SESSION['loggedin']) == true) {
                     $Username = $_COOKIE['Username'];
                 } 
+                */
+                $Username = $_COOKIE['Username']; // getting the username
             ?>
 
              <p>Welcome <strong><?=$Username?></strong>!</p>

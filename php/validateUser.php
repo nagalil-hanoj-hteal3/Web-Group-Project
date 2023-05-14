@@ -39,7 +39,7 @@ session_start();
 $Username=$_GET['username'];
 $Password = $_GET['password'];
 
-setcookie($Username);
+setcookie('Username', $Username, time()+3600);
 
 //connecting to the database with PDO
 require_once("config.php");

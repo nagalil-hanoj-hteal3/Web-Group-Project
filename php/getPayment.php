@@ -26,11 +26,23 @@ $Date=$_GET['date'];
 $CVV = $_GET['cvv'];
 
 $TableName = "payment";
+$UserTable = "users";
 
-//insert payment data to the table
-//$sql = "INSERT INTO $TableName VALUES (NULL, '$Email','$Password',NULL,NULL,NULL,NULL,NULL,NULL,NULL)";
+//retrieve the userID
+$sql = "SELECT userID FROM $UserTable WHERE email = '$Email'";
+$result= $pdo->query($sql);
 
-$sql = "INSERT INTO $TableName (full_name, email, card_holder, card_number, expiration, cvv) VALUES ('$Name','$Email', '$Card_Name', '$Card_Number' , '$Date', '$CVV')";
+if ($row = $result->fetch()) {
+  $userID = $row['userID'];
+} else {
+  // handle case where email address is not found in users table
+    echo "<script>alert('Please enter a valid email address');</script>";
+}
+
+if($row = $result->fetch())
+  $user = $row['full_name'];
+
+$sql = "INSERT INTO $TableName (full_name, email, card_holder, card_number, expiration, cvv, userID) VALUES ('$Name','$Email', '$Card_Name', '$Card_Number' , '$Date', '$CVV', '$userID')";
 
 
 $pdo->exec($sql);
