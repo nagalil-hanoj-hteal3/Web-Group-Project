@@ -23,7 +23,11 @@
                 </a>
             </div>
 
-             <p>Your order has been processed!</p>
+            <?php
+                $Username = $_COOKIE['Username']; // getting the username
+            ?>
+
+             <p>Your order has been processed, <strong><?=$Username?></strong>!</p>
              <button onclick="location.href='/html/index.html'">Go back to homepage</button>
 
     </section>
