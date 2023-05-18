@@ -14,7 +14,7 @@ FitRat is a fitness clothing shopping website with a music feature that can play
 <p>Pictures of products are provided on the homepage, and user is able to access these pages when clicking on it. </p>
 <h3>Women, Men, Accessories Pages</h2>
 <p>Includes shirts, hoodies, tanktops, longsleeves, and sweatpants, etc. When user hover overs the product, it changes to a different color. User can add item to cart.</p>
-<h2>Services</h2>
+<h3>Services</h2>
 <p>Provides questions and answers regarding our products.</p>
 <h3>About Us</h2>
 <p>Pictures of team members, with a more thorough overview of FitRat</p>
