@@ -9,6 +9,7 @@ FitRat is a fitness clothing shopping website with a music feature that can play
 <hr>
 
 <h1>Features</h1>
+**In Progress**
 
 <h3>Homepage</h2>
 <p>Pictures of products are provided on the homepage, and user is able to access these pages when clicking on it. </p>
