@@ -1,268 +1,44 @@
-.logo{ 
-    position: relative;
-    display: flex;
-    text-align: center;
-    margin-left: 20px;
-
+.navbar{
+    box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.1);
 }
 
-.logo h1 {
-    font-size: 45px;
-    font-weight: bold;
-}
-
-.fitrat-info {
-    position: absolute; 
-    margin-top: 70px;
-    align-items: center;
-    background-color: white;
-    margin-right: 40px;
-    margin-left: 40px;
-}
-
-.fitrat-info p {
-   padding: 20px;
-}
-
-h2, p{
-    color: black;
-}
-
-.pic img{
-   height: 200px;
-   width: 150px;
-   margin: 40px;
-}
-
-.pic {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /*height: 100vh;*/
-}
-
-.team-member {
-    text-align: center;
-    margin: 30px;
-    background-color: white;
-    margin-top: 0;
-}
-
-
-.team {
-    display: flex;
-    justify-content: flex-start; 
-    align-items: center; 
-    /*height: 90vh; */
-    position: absolute; 
-    top: 60%;
-    margin-left: 20px;
-  }
-
-.animate {
-    clear: left;
-    background-color: white;
-    /*height: fit-content;*/
-    border: 5px solid black;
-    border-radius: 5%;
-    font-size: smaller;
-    position: absolute;
-    max-width: 82em;
-    max-height: 33%;
-
-    overflow: scroll; 
-
-    display: flex;
-    /*text-align: center;*/
-    margin-left: 3em; 
-    margin-right: 2em;
-    top: 12em; 
-}
-
-.music {
-    float: left; 
-    position: absolute;
-    display: flex;
-    right: 1em; 
-}
-
-/*from aboutUs.css*/
-h1{
-    text-align: center;
-}
-
-body{
-    background-color: whitesmoke;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande';
-    line-height: 40px;
-}
-
-.logo{ 
-    position: relative;
-    display: flex;
-    text-align: center;
-}
-
-/*Tables*/
-table td, th{
-    color: black;
-}
-
-a:hover{
-    color:red;
-    font-size: 21px;
-}
-
-a:active{
-    color: blue;
-}
-
-.showcase.active {
-    left: 300px; 
-}
-
-/* dropdown menu*/
-.dropdown{
-    display: inline-block; 
-    color: rgb(95, 60, 60);
-
-}
-.dropdown_item{
-    display: none; 
-    min-width: 100%;
-}
-.dropdown_item a{
-    display: block;
-    color: rgb(95, 60, 60); 
-    margin-left: 15px; 
-    font-size: larger; 
-}
-
-
-.dropdown:hover .dropdown_item {
-    display: block;
-}
-
-
-/*style for the entire showcase */
-.showcase {
-    text-align: center;
-    position: absolute;
-    left: 0; 
-    /*width: 100%; */
-    min-height: 100vh;
-    padding: 100px;
-    display: flex; 
-    gap: 3rem;
-    overflow: scroll;
- 
-    background-color: lightgray; /*gray box to white*/ 
-    color: whitesmoke;
-    z-index: 1;
-    transition: 0.5s;
-    top:0;
-
-    background-position: center;
-    background-size:cover;
-    position: relative; 
-}
-
-.showcase h1{
-    text-align: center;
-    margin: 0 auto;
-    color: black;
-}
-.showcase.active {
-    left: 150px; 
-}
-/* //this section will over write the header of the calendar, 
-however, without this section, the header of the showcase cannot be styled */
-.showcase header{ 
-    position: absolute; 
-    left: 40%;
-    top: 1.5em;
-    align-items: center;
-}
-
-/* for the menu and close button*/
-.toggle{
-    position: absolute; 
-    width: 40px;
-    height: 40px;
-    background: url('/images/menu1.png') ;
-    background-repeat: no-repeat;
-    background-position: center; 
-    background-size: 40px;
-    margin-left: -4em; 
-    margin-top: -4.6em; 
-} 
-.toggle.active{
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    background: url('/images/cancel.png');
-    background-repeat: no-repeat;
-    background-size: 40px; 
-    background-position: center;
-}
-
-/* menu section*/
-.menu {
-    text-decoration: none;
-    line-height: 50px;
-    margin:20px;
-    position: absolute; 
-    top: 0;
-    left: 0; 
-    width: 60px; 
-    padding: 10px;
-    height: 100%;
-    display: flex; 
-    align-items: center;
-    justify-content: center;
-}
-
-.menu ul {
-    position: relative;
-    list-style: none;
-    font-size: 20px;
-}
-
-.menu ul li a {
-    text-decoration: none;
-    /*font-size: 20px;*/
-    color: #111;
-}
-
-.menu ul li a:hover {
-    color: rgb(151, 76, 151); 
-
-}
-
-.items{
-   position: absolute; 
-   margin-bottom: 0;
-   left: 20%; 
-}
-
-.items td{
-    padding: 1.5em;    
-}
-
-
- .team td{
-     color: blue;
-     line-height: normal;
-     font-family: Georgia, 'Times New Roman', Times, serif;
- }
-
- h2{
-    color: black;
-    font-family:'Times New Roman', Times, serif;
-    font-size: x-large;
+.container-fluid{
+    font-family: 'Times New Roman', Times, serif;
 }
 
 ::-webkit-scrollbar{
     display: none;
 }
 
+.insta-logo{
+    height: 30px;
+}
+
+.linkedin-logo{
+    height: 30px;
+} 
+
+.facebook-logo{
+    height: 30px;
+}
+
+#ej-info{
+    font-family: 'Gill Sans';
+}
+
+#team-table{
+    text-align: center;
+}
+
+.typing-text{
+    font-family: 'Trebuchet MS'; 
+    font-size: medium;
+}
+
+.header{
+    text-align: center; 
+    font-family:'Gill Sans'
+}
+/* body{
+    background-image: url('');
+} */

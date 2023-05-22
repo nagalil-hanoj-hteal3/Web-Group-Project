@@ -6,88 +6,227 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Men's Top</title>
     
-    <link rel="stylesheet"  type="text/css" href = "/css/women.css">
+    <link rel="stylesheet"  type="text/css" href = "/css/men.css">
     <link rel="icon" href="https://cdn.discordapp.com/attachments/1081329569258287296/1086137061750353971/image.png">
 
+    <!-- CSS stuff -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <!-- Java Script stuff-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+    <!-- Dropdowns, Popovers, Tolltips -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <section class="showcase">
+    <!--
+        Entire nav tag is the nav bar header on the webpage
+    -->
+    <nav class="navbar bg-light" data-bs-theme="light">
+        <div class="container-fluid" style="font-family: 'Times New Roman', Times, serif; ">
+            <a href="/html/men_top.html" class="navbar-brand mb-0 h1" style="font-size: 25px; text-decoration:underline;">
+            Men Top</a>
+            
+            <nav class="navbar navbar-expand-md"> 
+                <!-- bg-body-tertiary -->
+                <div class="container">
+                
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Women</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="/html/women_top.html">Women Top</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="/html/women_bottom.html">Women Bottom</a></li>
+                                </ul>
+                            </li>
+                            <!-- <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Men</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="/html/men_top.html">Men Top</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="/html/men_bottom.html">Men Bottom</a></li>
+                                </ul>
+                            </li> -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="/html/men_bottom.html">Men Bottom</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/html/accessories.html">Accessories</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/html/customerservice.html">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/html/about-us.html">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/html/shopping_cart.html">
+                                    <!-- <img src="/images/shopping_bag.png" width="30" height="30"> -->
+                                    <i class="bi bi-cart" style="font-size: large;"></i>
+                                    <span class="position-absolute translate-middle badge bg-primary">5</span>
+                                </a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" aria-current="page" href="#" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
+                                    <!-- <img src="/images/cancel.png" width="30" height="30"> -->
+                                    <!-- <i class="bi bi-x" style="font-size: 20px;"></i> -->
+                                    <button type="button" class="btn-close" aria-label="Close"></button>
+                                </a>
+                            </li>
+                        </ul>
+                        
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </nav>
+    
+    <br><h1>Men Top</h1>
+    <div class="container-fluid">
+        <table class="table align-middle table-borderless table-l">
+            <thead>
+                <tr>
+                    <th id="shirt">Shirts Section</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="/images/Men/Tops/Men_Shirt/Shirt 1/White.jpg" class="img-fluid" alt="Shirt-1" width="200px"></td>
+                    <td><img src="/images/Men/Tops/Men_Shirt/Shirt 2/White.jpg" class="img-fluid" alt="Shirt-2" width="200px"></td>
+                    <td><img src="/images/Men/Tops/Men_Shirt/Shirt 3/White.jpg" class="img-fluid" alt="Shirt-3" width="200px"></td>
+                </tr>
+                <tr id="row1">
+                    <td><p>FitRat Exclusive</p>
+                    <label>$20.00</label></td>
+                    <td><p>Where's the Fun</p>
+                    <label>$20.00</label></td>
+                    <td><p>FitRat Chest Logo</p>
+                    <label>$20.00</label></td>
+                </tr>
+                <tr>
+                    <td><div class="text-center">    
+                        <button class="btn btn-primary add-to-cart" data-product-id="1">Add to Cart</button>
+                    </div></td>
+                    <td><div class="text-center">    
+                        <button class="btn btn-primary add-to-cart" data-product-id="2">Add to Cart</button>
+                    </div></td>
+                    <td><div class="text-center">    
+                        <button class="btn btn-primary add-to-cart" data-product-id="3">Add to Cart</button>
+                    </div></td>
+                </tr>
+                <tr>
+                    <td><img src="/images/Men/Tops/Men_Shirt/Shirt 4/White.jpg" class="img-fluid" alt="Shirt-4" width="200px"></td>
+                    <td><img src="/images/Men/Tops/Men_Shirt/Shirt 5/White.png" class="img-fluid" alt="Shirt-5" width="200px"></td>
+                    <td><img src="/images/Men/Tops/Men_Shirt/Shirt 6/White.jpg" class="img-fluid" alt="Shirt-6" width="200px"></td>
+                </tr>
+                <tr id="row1">
+                    <td><p class="card-title">FitRat Motto</p>
+                    <label class="card-text">$20.00</label></td>
+                    <td><label>Fitrat: SE Edition<br>$20.00</label></td>
+                    <td><label>Plain T-Shirt<br>$20.00</label></td>
+                </tr>
+                <tr>
+                    <td><div class="text-center">    
+                        <button class="btn btn-primary add-to-cart" data-product-id="4">Add to Cart</button>
+                    </div></td>
+                    <td><div class="text-center">    
+                        <button class="btn btn-primary add-to-cart" data-product-id="5">Add to Cart</button>
+                    </div></td>
+                    <td><div class="text-center">    
+                        <button class="btn btn-primary add-to-cart" data-product-id="6">Add to Cart</button>
+                    </div></td>
+                </tr>
+            </tbody>
+        </table>
 
-        <header class="logo">
-            <h1>Men's Top</h1>   
-        </header>
-
-    <div class="toggle"></div>
-
+    </div>
         <!--music bar-->
-        <div class="music">
+        <!-- <div class="music">
             <a hidden>
             <audio controls loop autoplay> 
                 <source src="/music/feeling_happy.wav" type="audio/wav" >
             </audio>
             </a>
-        </div>     
+        </div>      -->
+
+    <script>
+       // JavaScript code for handling the "Add to Cart" button click
+        var addToCartButtons = document.querySelectorAll('.add-to-cart');
+        addToCartButtons.forEach(function(button) {
+            button.addEventListener('click', function(event) {
+            var productId = button.getAttribute('data-product-id');
+            var productName = button.parentNode.parentNode.querySelector('p:nth-child(1)').textContent;
+            var productPrice = button.parentNode.parentNode.querySelector('label:nth-child(1)').textContent;
+
+            // Save the cart data to localStorage or pass it to the next webpage using query parameters, cookies, or server-side storage
+            var cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+            
+            // Check if the selected product is already in the cart
+            var existingItem = cartItems.find(function(item) {
+                return item.id === productId;
+            });
+
+            if (existingItem) {
+                // If the product is already in the cart, update its quantity
+                existingItem.quantity++;
+            } else {
+                // If the product is not in the cart, add it as a new item
+                var newItem = {
+                id: productId,
+                name: productName,
+                price: productPrice,
+                quantity: 1
+                };
+                cartItems.push(newItem);
+            }
+
+            // Save the updated cart data to localStorage
+            localStorage.setItem('cartItems', JSON.stringify(cartItems));
+
+            // Perform the necessary logic to add the product to the cart
+            console.log('Product ' + productId + ' added to cart<br>' + 'Product Name ' + productName + ' is $' + productPrice);
+            });
+
+        }); 
+    </script>
 
     <!--for men top-->
-    <div class="men_top">
+    <!-- <div class="men_top">
         <table>
-         <!--men shirt-->
+         men shirt
          <tr><th colspan="5">Shirts Section</th></tr>
          <tr class="men_shirt_items"></tr>
 
-         <!--men long sleeve-->
+         men long sleeve
          <tr><th colspan="5">Longsleeves Section</th></tr>
          <tr class="men_longsleeve_items"></tr>
 
-         <!--men hoodie-->
+         men hoodie
          <tr><th colspan="5">Hoodies Section</th></tr>
          <tr class="men_hoodie_items"></tr>
 
-         <!--men tanktop-->   
+         men tanktop   
          <tr><th colspan="5">Tanktop Section</th></tr>
          <tr class="men_tanktop_items"></tr>
         </table>
 
 
-    </div>
-    </section>
+    </div> -->
 
-    <div class="menu">
-        <ul>
-            <li><a href="index.html"> 
-                <img src="https://cdn.discordapp.com/attachments/1081329569258287296/1086137061750353971/image.png" width="50" height="50">
-            </a></li>
-            <li><div class ="dropdown" >
-                <div href="women.html">Women</div>  
-                <div class="dropdown_item">
-                    <a href="women_top.html">Tops</a>
-                    <a href="women_bottom.html">Bottoms</a> 
-                </div> 
-            </div> </li>
-    
-            <li><div class ="dropdown" >
-                <div href="men.html">Men</div>  
-                <div class="dropdown_item">
-                    <a href="men_top.html">Tops</a>
-                    <a href="men_bottom.html">Bottoms</a> 
-                </div></div></li> 
-            
-                <li><a href="accessories.html" >Accessories</a> </li>
-                <li><a href="customerservice.html" >Services</a></li>
-                <li><a href="about-us.html">About Us</a> </li><br><br>
-                <li><a href="shopping_cart.html"><br><br><br>
-                    <span class="shopping_cart_pic">
-                        <img class="shopping_cart_pic" src="/images/shopping_bag.png" width="50" height="50">
-                        <span class="cart_count"></span>
-                    </span>
-                <a href="login.php"><img src="/images/login.png" width="50" height="50"></a>
-            </li> 
-        </ul>
-
-    </div>
+   
 </body>
-<script src="/js/menu.js" defer></script>
-<script src="/js/men_top.js" defer></script> 
+<!-- <script src="/js/men_top.js" defer></script>  -->
 
 </html>
