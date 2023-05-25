@@ -1,7 +1,7 @@
 // Import the functions you need from the SDKs you need
-import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js";
-import { getDatabase, set, ref, update } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-database.js";
-import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-auth.js";
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.1/firebase-app.js";
+import { getDatabase, set, ref, update } from "https://www.gstatic.com/firebasejs/9.22.1/firebase-database.js";
+import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut } from "https://www.gstatic.com/firebasejs/9.22.1/firebase-auth.js";
 
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
@@ -11,6 +11,7 @@ import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, si
 const firebaseConfig = {
     apiKey: "AIzaSyAfMsWvrsciOhBJQG3_dsRgF5BrdKmptvY",
     authDomain: "signup-page-60f27.firebaseapp.com",
+    databaseURL: "https://signup-page-60f27-default-rtdb.firebaseio.com",
     projectId: "signup-page-60f27",
     storageBucket: "signup-page-60f27.appspot.com",
     messagingSenderId: "355197311024",
