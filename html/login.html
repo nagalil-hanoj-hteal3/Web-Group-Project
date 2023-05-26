@@ -48,11 +48,11 @@
         </div>
     </div> -->
 
-    <div class="wrapper">
+    <!-- <div class="wrapper">
         <div class="container main">
             <div class="row">
                 <div class="col-md-6 side-image">
-                    <!-- Image -->
+                    Image
                     <img src="/images/Logo.png" alt="FitRat Logo"/>
                     <div class="text">
                         <p>Fit does not rhyme with quit!</p>
@@ -60,7 +60,7 @@
                 </div>
                 <div class="col-md-6 right">
                     <div class="input-box-register">
-                        <header>Create account</header>
+                        <header>Create/Register account</header>
                         <div class="input-field">
                             <input type="text" class="input" id="email" name="email" placeholder="Type email"/>
                             <label for="Email">Email</label>
@@ -82,7 +82,7 @@
                     </div>
                 </div>
 
-                <!-- For logging in  -->
+                For logging in 
 
                 <div class="col-md-6 right">
                     <div class="input-box-login">
@@ -102,8 +102,79 @@
                 </div>
             </div>
         </div>
+    </div> -->
+    <div class="wrapper">
+        <div class="container main">
+            <div class="row">
+                <div class="col-md-6 side-image">
+                    <!-- Image -->
+                    <img src="/images/Logo.png" alt="FitRat Logo"/>
+                    <div class="text">
+                        <p>Fit does not rhyme with quit!</p>
+                    </div>
+                </div>
+                <div class="col-md-6 right">
+                    <div id="signUpSection" class="input-box-register">
+                        <header>Create/Register account</header>
+                        <div class="input-field">
+                            <input type="text" class="input" id="email" name="email" placeholder="Type email"/>
+                            <label for="Email">Email</label>
+                        </div>
+                        <div class="input-field">
+                            <input type="text" class="input" id="username" name="username" placeholder="Type username"/>
+                            <label for="Username">Username</label>
+                        </div>
+                        <div class="input-field">
+                            <input type="password" class="input" id="password" name="password" placeholder="Type password"/>
+                            <label for="Passowrd">Password</label>
+                        </div>
+                        <div class="input-field">
+                            <input type="submit" class="submit" id="signUp" name="signup_submit" value="Sign Up"/>
+                        </div>
+                        <div class="signIn">
+                            <span>Already have an account?<a href="#" id="switchToLogin"> Log in here</a></span>
+                        </div>
+                    </div>
+    
+                    <div id="loginSection" class="input-box-login" style="display: none;">
+                        <header>Logging into existing account</header>
+                        <div class="input-field">
+                            <input type="text" class="input" id="loginEmail" name="loginEmail" placeholder="Type email"/>
+                            <label for="LoginEmail">Email</label>
+                        </div>
+                        <div class="input-field">
+                            <input type="password" class="input" id="loginPassword" name="loginPassword" placeholder="Type password"/>
+                            <label for="LoginPassword">Password</label>
+                        </div>
+                        <div class="input-field">
+                            <input type="submit" class="submit" id="login" name="login" value="Login"/>
+                        </div>
+                        <div class="signUp">
+                            <span>Don't have an account?<a href="#" id="switchToSignUp"> Sign up here</a></span>
+                        </div>
+                        <button id="logoutButton">Logout</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-
+    
+    <script>
+        // Switch to sign up section
+        document.getElementById("switchToSignUp").addEventListener("click", function(event) {
+            event.preventDefault();
+            document.getElementById("signUpSection").style.display = "block";
+            document.getElementById("loginSection").style.display = "none";
+        });
+    
+        // Switch to login section
+        document.getElementById("switchToLogin").addEventListener("click", function(event) {
+            event.preventDefault();
+            document.getElementById("signUpSection").style.display = "none";
+            document.getElementById("loginSection").style.display = "block";
+        });
+    </script>
+    
 
 </body>
 
