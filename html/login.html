@@ -149,7 +149,7 @@
                         <div class="input-field">
                             <input type="submit" class="submit" id="login" name="login" value="Login"/>
                         </div>
-                        <div class="signUp">
+                        <div class="signIn">
                             <span>Don't have an account?<a href="#" id="switchToSignUp"> Sign up here</a></span>
                         </div>
                         <button id="logoutButton">Logout</button>
@@ -158,23 +158,6 @@
             </div>
         </div>
     </div>
-    
-    <script>
-        // Switch to sign up section
-        document.getElementById("switchToSignUp").addEventListener("click", function(event) {
-            event.preventDefault();
-            document.getElementById("signUpSection").style.display = "block";
-            document.getElementById("loginSection").style.display = "none";
-        });
-    
-        // Switch to login section
-        document.getElementById("switchToLogin").addEventListener("click", function(event) {
-            event.preventDefault();
-            document.getElementById("signUpSection").style.display = "none";
-            document.getElementById("loginSection").style.display = "block";
-        });
-    </script>
-    
 
 </body>
 

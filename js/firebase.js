@@ -113,6 +113,21 @@ logout.addEventListener('click', (e) =>{
     });
 });
 
+
+// Switch to sign up section
+document.getElementById("switchToSignUp").addEventListener("click", function(event) {
+    event.preventDefault();
+    document.getElementById("signUpSection").style.display = "block";
+    document.getElementById("loginSection").style.display = "none";
+});
+
+// Switch to login section
+document.getElementById("switchToLogin").addEventListener("click", function(event) {
+    event.preventDefault();
+    document.getElementById("signUpSection").style.display = "none";
+    document.getElementById("loginSection").style.display = "block";
+});
+
 // const firebaseConfig = {
 //     apiKey: "AIzaSyAfMsWvrsciOhBJQG3_dsRgF5BrdKmptvY",
 //     authDomain: "signup-page-60f27.firebaseapp.com",
