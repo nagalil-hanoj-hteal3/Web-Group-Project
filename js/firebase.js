@@ -1,7 +1,7 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.1/firebase-app.js";
 import { getDatabase, set, ref, update } from "https://www.gstatic.com/firebasejs/9.22.1/firebase-database.js";
-import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut } from "https://www.gstatic.com/firebasejs/9.22.1/firebase-auth.js";
+import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/9.22.1/firebase-auth.js";
 
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
@@ -97,6 +97,9 @@ onAuthStateChanged(auth, (user) => {
     }
 });
 
+
+const logout = document.getElementById('logoutButton');
+
 logout.addEventListener('click', (e) =>{
     signOut(auth).then(() => {
     // Sign-out successful.
@@ -108,6 +111,21 @@ logout.addEventListener('click', (e) =>{
 
         alert(errorMessage);
     });
+});
+
+
+// Switch to sign up section
+document.getElementById("switchToSignUp").addEventListener("click", function(event) {
+    event.preventDefault();
+    document.getElementById("signUpSection").style.display = "block";
+    document.getElementById("loginSection").style.display = "none";
+});
+
+// Switch to login section
+document.getElementById("switchToLogin").addEventListener("click", function(event) {
+    event.preventDefault();
+    document.getElementById("signUpSection").style.display = "none";
+    document.getElementById("loginSection").style.display = "block";
 });
 
 // const firebaseConfig = {
